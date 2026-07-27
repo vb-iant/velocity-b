@@ -155,7 +155,7 @@ export default function UkExpansionPage() {
                 fill="#0A1543"
                 fontSize="12"
                 fontWeight="700"
-                fontFamily="'Space Grotesk',sans-serif"
+                className="font-display"
               >
                 LONDON
               </text>

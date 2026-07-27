@@ -10,7 +10,7 @@ export function Logo({ className = "h-9 w-auto" }: { className?: string }) {
       <text
         x="34"
         y="50"
-        fontFamily="'Space Grotesk',sans-serif"
+        className="font-display"
         fontWeight="700"
         fontSize="30"
         fill="#FFFFFF"
@@ -23,7 +23,7 @@ export function Logo({ className = "h-9 w-auto" }: { className?: string }) {
       <text
         x="51"
         y="65"
-        fontFamily="'Space Grotesk',sans-serif"
+        className="font-display"
         fontWeight="700"
         fontSize="42"
         fill="#FFFFFF"
@@ -33,7 +33,7 @@ export function Logo({ className = "h-9 w-auto" }: { className?: string }) {
       <text
         x="102"
         y="65"
-        fontFamily="'Space Grotesk',sans-serif"
+        className="font-display"
         fontWeight="600"
         fontSize="42"
         fill="#0A1543"
@@ -56,7 +56,7 @@ export function LogoMark({ className = "h-32 w-auto" }: { className?: string }) 
       <text
         x="34"
         y="50"
-        fontFamily="'Space Grotesk',sans-serif"
+        className="font-display"
         fontWeight="700"
         fontSize="30"
         fill="#FFFFFF"
@@ -69,7 +69,7 @@ export function LogoMark({ className = "h-32 w-auto" }: { className?: string }) 
       <text
         x="51"
         y="65"
-        fontFamily="'Space Grotesk',sans-serif"
+        className="font-display"
         fontWeight="700"
         fontSize="42"
         fill="#FFFFFF"

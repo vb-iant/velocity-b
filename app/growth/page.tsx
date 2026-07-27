@@ -93,7 +93,7 @@ export default function GrowthPage() {
                   fill="#9096a8"
                   fontSize="13"
                   fontWeight="600"
-                  fontFamily="'Work Sans',sans-serif"
+                  className="font-body"
                 >
                   FOUNDER-LED SALES
                 </text>
@@ -103,7 +103,7 @@ export default function GrowthPage() {
                   fill="#0A1543"
                   fontSize="13"
                   fontWeight="700"
-                  fontFamily="'Work Sans',sans-serif"
+                  className="font-body"
                 >
                   REPEATABLE ENGINE
                 </text>
