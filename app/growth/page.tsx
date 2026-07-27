@@ -151,7 +151,7 @@ export default function GrowthPage() {
             <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
               How We Help
             </h2>
-            <div className="mt-6">
+            <div className="mt-6 w-full">
               <DriveCard />
             </div>
             <Link href="/how-we-work" className={`${ctaOutline} mt-6`}>
