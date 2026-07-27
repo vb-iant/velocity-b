@@ -82,12 +82,12 @@ export default function UkExpansionPage() {
     <main>
       {/* Hero */}
       <section className="mx-auto max-w-[1180px] px-12 py-20">
-        <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-[0.8fr_1.2fr]">
+        <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
           <div>
-            <h1 className="font-display text-[32px] font-bold leading-[1.06] tracking-tight md:text-[52px]">
+            <h1 className="font-display text-[36px] font-bold leading-[1.04] tracking-tight md:text-[72px]">
               The UK, without the guesswork.
             </h1>
-            <div className="font-display mt-1 text-[32px] font-bold leading-[1.06] tracking-tight text-blue md:text-[52px]">
+            <div className="font-display mt-0.5 text-[36px] font-bold leading-[1.04] tracking-tight text-blue md:text-[72px]">
               Or the cold start.
             </div>
             <Link href="/contact" className={`${ctaSolid} mt-7`}>
@@ -103,6 +103,7 @@ export default function UkExpansionPage() {
             <div className="font-display mt-0 text-[22px] font-semibold text-blue">
               We become your UK team. Your voice, your values, your pipeline.
             </div>
+
           </div>
         </div>
       </section>
