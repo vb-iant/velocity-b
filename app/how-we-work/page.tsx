@@ -77,16 +77,16 @@ export default function HowWeWorkPage() {
       <section className="mx-auto max-w-[1180px] px-12 py-20">
         <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-[1fr_1.2fr]">
           <div>
-            <h1 className="font-display text-[34px] font-bold leading-[1.06] tracking-tight md:text-[48px]">
+            <h1 className="font-display text-[36px] font-bold leading-[1.04] tracking-tight md:text-[72px]">
               How We Work
             </h1>
-            <div className="font-display text-[34px] font-bold leading-[1.1] tracking-tight text-blue md:text-[48px]">
+            <div className="font-display text-[36px] font-bold leading-[1.04] tracking-tight text-blue md:text-[72px]">
               One method.
             </div>
-            <div className="font-display text-[34px] font-bold leading-[1.1] tracking-tight text-blue md:text-[48px]">
+            <div className="font-display text-[36px] font-bold leading-[1.04] tracking-tight text-blue md:text-[72px]">
               Five stages.
             </div>
-            <div className="font-display text-[34px] font-bold leading-[1.1] tracking-tight text-blue md:text-[48px]">
+            <div className="font-display text-[36px] font-bold leading-[1.04] tracking-tight text-blue md:text-[72px]">
               No guesswork.
             </div>
           </div>
