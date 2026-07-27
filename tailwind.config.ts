@@ -12,6 +12,7 @@ const config: Config = {
         navy: "#0A1543",
         blue: "#5CA6FF",
         orange: "#FF8A3D",
+        hair: "#e7e8ee",
       },
       fontFamily: {
         display: ["var(--font-space-grotesk)", "sans-serif"],
