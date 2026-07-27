@@ -90,9 +90,6 @@ export default function UkExpansionPage() {
             <div className="font-display mt-0.5 text-[36px] font-bold leading-[1.04] tracking-tight text-blue md:text-[72px]">
               Or the cold start.
             </div>
-            <Link href="/contact" className={`${ctaSolid} mt-7`}>
-              Let&rsquo;s get started
-            </Link>
           </div>
           <div>
             <p className="max-w-[600px] text-lg leading-[1.7] text-[#42465c]">
@@ -100,10 +97,12 @@ export default function UkExpansionPage() {
               Europe, entering the UK&rsquo;s lucrative tech market can be a
               milestone in your company&rsquo;s growth, and we can help.
             </p>
-            <div className="font-display mt-0 text-[22px] font-semibold text-blue">
+            <div className="font-display mt-5 text-[22px] font-semibold text-blue">
               We become your UK team. Your voice, your values, your pipeline.
             </div>
-
+            <Link href="/contact" className={`${ctaSolid} mt-7`}>
+              Let&rsquo;s get started
+            </Link>
           </div>
         </div>
       </section>
