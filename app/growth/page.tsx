@@ -147,11 +147,19 @@ export default function GrowthPage() {
       {/* How We Help / DRIVE */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
-          <div>
+          <div className="flex flex-col items-start">
             <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
               How We Help
             </h2>
-            <p className="mt-3 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
+            <div className="mt-6">
+              <DriveCard />
+            </div>
+            <Link href="/how-we-work" className={`${ctaOutline} mt-6`}>
+              See how we work
+            </Link>
+          </div>
+          <div>
+            <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
               We run all of this through DRIVE — the same method behind
               everything we do (see How We Work) — scoped end to end for
               Growth engagements.
@@ -164,12 +172,6 @@ export default function GrowthPage() {
                 </li>
               ))}
             </ul>
-            <Link href="/how-we-work" className={`${ctaOutline} mt-3`}>
-              See how we work
-            </Link>
-          </div>
-          <div className="flex justify-end">
-            <DriveCard />
           </div>
         </div>
       </section>
