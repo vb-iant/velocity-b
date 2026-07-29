@@ -19,7 +19,6 @@ export const PRIMARY_NAV: NavGroup[] = [
     links: [
       { label: "Revenue Growth", href: "/growth" },
       { label: "UK Expansion", href: "/uk-expansion" },
-      { label: "Investor Confidence", href: "/investors" },
     ],
   },
   {
@@ -57,7 +56,6 @@ export const FOOTER_NAV: NavGroup[] = [
     links: [
       { label: "Revenue Growth", href: "/growth" },
       { label: "UK Expansion", href: "/uk-expansion" },
-      { label: "Investor Confidence", href: "/investors" },
       { label: "NEDs & Board Advisors", href: "/neds" },
     ],
   },
