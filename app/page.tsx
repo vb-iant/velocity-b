@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { DriveCard } from "@/components/DriveCard";
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
 const ctaOutline =
@@ -22,10 +21,9 @@ export default function Home() {
           </div>
           <div>
             <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
-              Hi, we help B2B tech companies compete, scale, and grow with
-              hands-on go-to-market advice, built from having actually done
-              the job ourselves rather than just advised on it from the
-              sidelines.
+              Hi, we help B2B tech companies compete, scale, and grow, based
+              on hard-won experience and expertise, with a fractional
+              offering we call &ldquo;Revenue-as-a-Service&rdquo;.
             </p>
             <p className="mt-4 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
               We&rsquo;re a small, execution-focused team; if something needs
@@ -53,7 +51,7 @@ export default function Home() {
         <div className="mt-8 grid grid-cols-1 gap-7 md:grid-cols-3">
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
             <h3 className="font-display text-[22px] font-semibold">For Growth</h3>
-            <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               If you&rsquo;re a B2B SaaS company trying to grow with a small
               team, you probably don&rsquo;t need more theory, you need clear
               thinking, experienced hands, and help turning &ldquo;good
@@ -68,7 +66,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col border-t-[6px] border-orange pt-6">
             <h3 className="font-display text-[22px] font-semibold">For UK Expansion</h3>
-            <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               Heading into the UK from the US or mainland Europe is a genuine
               milestone, and it&rsquo;s easy to either rush it or wait too
               long. We&rsquo;ve done this before, and we can help you land it
@@ -83,7 +81,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col border-t-[6px] border-navy pt-6">
             <h3 className="font-display text-[22px] font-semibold">For Investors</h3>
-            <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               From pre-investment due diligence to hands-on fractional
               leadership, we help portfolio companies turn their innovation
               into growth, revenue, and a return on investment.
@@ -153,35 +151,13 @@ export default function Home() {
               <h3 className={`font-display mb-2.5 text-[17px] font-bold ${cell.color}`}>
                 {cell.title}
               </h3>
-              <p className="text-[14.5px] leading-[1.6] text-[#42465c]">{cell.body}</p>
+              <p className="text-lg leading-[1.6] text-[#42465c]">{cell.body}</p>
             </div>
           ))}
         </div>
         <Link href="/how-we-work" className={`${ctaOutline} mt-8`}>
           How we help
         </Link>
-      </section>
-
-      {/* How We Work / DRIVE */}
-      <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-2">
-          <div>
-            <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-              How We Work
-            </h2>
-            <p className="mt-3 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
-              Every engagement runs on the same proven process — a method we
-              call DRIVE: Diagnose, Refine, Implement, Validate, Expand. Five
-              stages, one thread, no guesswork about what happens next.
-            </p>
-            <Link href="/how-we-work" className={`${ctaOutline} mt-3`}>
-              See how we work
-            </Link>
-          </div>
-          <div className="flex justify-end">
-            <DriveCard />
-          </div>
-        </div>
       </section>
 
       {/* Not Our First Rodeo */}
