@@ -111,6 +111,28 @@ export function getTagBySlug(slug: string): Tag | null {
   return getAllTags().find((t) => t.slug === slug) ?? null;
 }
 
+export function getRelatedPosts(post: BlogPost, count = 3): BlogPost[] {
+  const all = getAllBlogPosts();
+  const postTags = new Set(post.frontmatter.tags ?? []);
+
+  const scored = all
+    .filter((p) => p.frontmatter.slug !== post.frontmatter.slug)
+    .map((p) => {
+      const sharedTags = (p.frontmatter.tags ?? []).filter((t) => postTags.has(t)).length;
+      return { post: p, sharedTags };
+    })
+    .filter((entry) => entry.sharedTags > 0)
+    .sort((a, b) => {
+      if (b.sharedTags !== a.sharedTags) return b.sharedTags - a.sharedTags;
+      return (
+        new Date(b.post.frontmatter.date).getTime() -
+        new Date(a.post.frontmatter.date).getTime()
+      );
+    });
+
+  return scored.slice(0, count).map((entry) => entry.post);
+}
+
 export function formatPostDate(dateStr: string): string {
   return new Date(dateStr).toLocaleDateString("en-GB", {
     year: "numeric",
