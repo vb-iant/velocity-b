@@ -14,7 +14,7 @@ export default function Home() {
         <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
           <div>
             <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
-              Growth doesn&rsquo;t need more buzzwords.
+              <span className="text-blue">&gt; </span>Growth doesn&rsquo;t need more buzzwords.
             </h1>
             <h2 className="font-display mt-2 text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
               It needs someone who&rsquo;s actually done it.
@@ -40,7 +40,7 @@ export default function Home() {
       {/* Revenue-as-a-Service */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          Revenue-as-a-Service
+          <span className="text-blue">&gt; </span>Revenue-as-a-Service
         </h2>
         <p className="mt-4 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
           We believe that growing companies need a Revenue Department, not
@@ -101,7 +101,7 @@ export default function Home() {
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-[30%_70%]">
           <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-            The Outcome
+            <span className="text-blue">&gt; </span>The Outcome
           </h2>
           <p className="max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
             <strong>Awareness, Revenue, Trust. </strong>We believe this is the
@@ -117,7 +117,7 @@ export default function Home() {
       {/* Reduce Risk, Create Velocity */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          Reduce Risk, Create Velocity
+          <span className="text-blue">&gt; </span>Reduce Risk, Create Velocity
         </h2>
         <p className="mt-3 max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
           Our engagements are agile, providing just the help you need, with a
@@ -164,7 +164,7 @@ export default function Home() {
       {/* Meet Alex & Ian */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          Meet Alex &amp; Ian
+          <span className="text-blue">&gt; </span>Meet Alex &amp; Ian
         </h2>
         <p className="mt-4 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
           Our managing partners have decades of sales and marketing
@@ -172,7 +172,7 @@ export default function Home() {
           get sh*t done when called upon.
         </p>
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
-          <div className="flex flex-col border-t-[6px] border-blue pt-6">
+          <div className="flex flex-col border-t-[6px] border-orange pt-6">
             <Image
               src="/team/alex.jpg"
               alt="Alex Simonson"
@@ -194,7 +194,7 @@ export default function Home() {
               — Bruce Seymour, Client Director, MantisNLP
             </p>
           </div>
-          <div className="flex flex-col border-t-[6px] border-navy pt-6">
+          <div className="flex flex-col border-t-[6px] border-blue pt-6">
             <Image
               src="/team/ian.jpg"
               alt="Ian Truscott"
@@ -230,7 +230,7 @@ export default function Home() {
       {/* Not Our First Rodeo */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-16 text-center">
         <h2 className="font-display mb-3.5 text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          Not Our First Rodeo
+          <span className="text-blue">&gt; </span>Not Our First Rodeo
         </h2>
         <p className="mx-auto max-w-[680px] text-lg leading-[1.7] text-[#42465c]">
           We&rsquo;ve helped teams at companies like 3radical, Orange Logic,
@@ -284,7 +284,7 @@ export default function Home() {
       {/* Ready to Start */}
       <div className="bg-navy px-12 py-24 text-center text-white">
         <h2 className="font-display mx-auto mb-3 max-w-[760px] text-[32px] font-bold leading-tight tracking-tight text-white md:text-[46px]">
-          Ready to Start?
+          <span className="text-blue">&gt; </span>Ready to Start?
         </h2>
         <h3 className="font-display mx-auto mb-7 max-w-[640px] text-xl font-semibold text-white/90">
           Turn Your Sales &amp; Marketing Into a Growth Engine.
