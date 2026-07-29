@@ -160,6 +160,58 @@ export default function Home() {
         </Link>
       </section>
 
+      {/* Meet Alex & Ian */}
+      <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
+        <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
+          Meet Alex &amp; Ian
+        </h2>
+        <p className="mt-4 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
+          Our managing partners have decades of sales and marketing
+          leadership experience and a tight, trusted network of experts who
+          get sh*t done when called upon.
+        </p>
+        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+          <div className="flex flex-col border-t-[6px] border-blue pt-6">
+            <h3 className="font-display text-[22px] font-semibold">Alex Simonson</h3>
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
+              A seasoned sales leader with over 20 years of experience,
+              driving SaaS and data-led revenue growth strategies with a wide
+              range of companies from start-ups to global enterprises.
+            </p>
+            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
+              &ldquo;Alex coached me to win some of the most complex and
+              exciting individual projects I have worked on.&rdquo;
+            </p>
+            <p className="mt-2 text-sm text-[#9096a8]">
+              — Bruce Seymour, Client Director, MantisNLP
+            </p>
+          </div>
+          <div className="flex flex-col border-t-[6px] border-navy pt-6">
+            <h3 className="font-display text-[22px] font-semibold">Ian Truscott</h3>
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
+              Founder of Velocity B, based on a background in tech and
+              product development, Ian is an experienced marketing leader,
+              4x CMO, writer, and trusted advisor.
+            </p>
+            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
+              &ldquo;I recommend anyone looking for a voice of reason in the
+              software technology world to seek Ian&rsquo;s input.&rdquo;
+            </p>
+            <p className="mt-2 text-sm text-[#9096a8]">
+              — Siobhan Fagan, Chief Editor, Reworked
+            </p>
+          </div>
+        </div>
+        <p className="mt-12 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
+          No account managers. No junior hand-offs. You work directly with
+          senior operators who have built, scaled, and led B2B GTM engines
+          before.
+        </p>
+        <Link href="/about" className={`${ctaOutline} mt-6`}>
+          About Us
+        </Link>
+      </section>
+
       {/* Not Our First Rodeo */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-16 text-center">
         <h2 className="font-display mb-3.5 text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
