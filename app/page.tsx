@@ -49,7 +49,7 @@ export default function Home() {
           account management that works for and with your business, while you
           get on with the business of building a great product.
         </p>
-        <div className="mt-8 grid grid-cols-1 gap-7 md:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-7 md:grid-cols-2">
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
             <h3 className="font-display text-[22px] font-semibold">For Growth</h3>
             <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
@@ -78,20 +78,6 @@ export default function Home() {
               className="font-display mt-auto pt-4 text-sm font-bold text-orange"
             >
               Explore UK Expansion →
-            </Link>
-          </div>
-          <div className="flex flex-col border-t-[6px] border-navy pt-6">
-            <h3 className="font-display text-[22px] font-semibold">For Investors</h3>
-            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
-              From pre-investment due diligence to hands-on fractional
-              leadership, we help portfolio companies turn their innovation
-              into growth, revenue, and a return on investment.
-            </p>
-            <Link
-              href="/investors"
-              className="font-display mt-auto pt-4 text-sm font-bold text-navy"
-            >
-              Explore Investors →
             </Link>
           </div>
         </div>
@@ -173,13 +159,22 @@ export default function Home() {
         </p>
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex flex-col border-t-[6px] border-orange pt-6">
-            <Image
-              src="/team/alex.jpg"
-              alt="Alex Simonson"
-              width={120}
-              height={120}
-              className="h-[120px] w-[120px] object-cover"
-            />
+            <a
+              href="https://www.linkedin.com/in/alex-simonson/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Alex Simonson on LinkedIn"
+              className="group relative block h-[120px] w-[120px] overflow-hidden"
+            >
+              <Image
+                src="/team/alex.jpg"
+                alt="Alex Simonson"
+                width={120}
+                height={120}
+                className="h-[120px] w-[120px] object-cover transition-transform duration-300 ease-out group-hover:scale-110"
+              />
+              <span className="absolute inset-0 bg-navy/0 transition-colors duration-300 group-hover:bg-navy/25" />
+            </a>
             <h3 className="font-display mt-4 text-[22px] font-semibold">Alex Simonson</h3>
             <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               A seasoned sales leader with over 20 years of experience,
@@ -195,13 +190,22 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
-            <Image
-              src="/team/ian.jpg"
-              alt="Ian Truscott"
-              width={120}
-              height={120}
-              className="h-[120px] w-[120px] object-cover"
-            />
+            <a
+              href="https://www.linkedin.com/in/iantruscott/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ian Truscott on LinkedIn"
+              className="group relative block h-[120px] w-[120px] overflow-hidden"
+            >
+              <Image
+                src="/team/ian.jpg"
+                alt="Ian Truscott"
+                width={120}
+                height={120}
+                className="h-[120px] w-[120px] object-cover transition-transform duration-300 ease-out group-hover:scale-110"
+              />
+              <span className="absolute inset-0 bg-navy/0 transition-colors duration-300 group-hover:bg-navy/25" />
+            </a>
             <h3 className="font-display mt-4 text-[22px] font-semibold">Ian Truscott</h3>
             <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               Founder of Velocity B, based on a background in tech and
