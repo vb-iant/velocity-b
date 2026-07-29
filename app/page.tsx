@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
 const ctaOutline =
@@ -172,7 +173,14 @@ export default function Home() {
         </p>
         <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
-            <h3 className="font-display text-[22px] font-semibold">Alex Simonson</h3>
+            <Image
+              src="/team/alex.jpg"
+              alt="Alex Simonson"
+              width={120}
+              height={120}
+              className="h-[120px] w-[120px] object-cover"
+            />
+            <h3 className="font-display mt-4 text-[22px] font-semibold">Alex Simonson</h3>
             <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               A seasoned sales leader with over 20 years of experience,
               driving SaaS and data-led revenue growth strategies with a wide
@@ -187,7 +195,14 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col border-t-[6px] border-navy pt-6">
-            <h3 className="font-display text-[22px] font-semibold">Ian Truscott</h3>
+            <Image
+              src="/team/ian.jpg"
+              alt="Ian Truscott"
+              width={120}
+              height={120}
+              className="h-[120px] w-[120px] object-cover"
+            />
+            <h3 className="font-display mt-4 text-[22px] font-semibold">Ian Truscott</h3>
             <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               Founder of Velocity B, based on a background in tech and
               product development, Ian is an experienced marketing leader,
