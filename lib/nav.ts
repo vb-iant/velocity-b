@@ -47,16 +47,13 @@ export const PRIMARY_NAV: NavGroup[] = [
 // Standalone CTA, not part of a dropdown.
 export const NAV_CTA: NavLink = { label: "Get in touch", href: "/contact" };
 
-// Footer — mirrors the four primary groups as columns, plus NEDs & Board
-// Advisors, which is deliberately footer-only (per sitemap doc: lighter
-// weight, no primary-nav slot).
+// Footer — mirrors the four primary groups as columns.
 export const FOOTER_NAV: NavGroup[] = [
   {
     label: "How We Help",
     links: [
       { label: "Revenue Growth", href: "/growth" },
       { label: "UK Expansion", href: "/uk-expansion" },
-      { label: "NEDs & Board Advisors", href: "/neds" },
     ],
   },
   {
