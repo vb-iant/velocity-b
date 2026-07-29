@@ -22,13 +22,14 @@ export default function Home() {
           </div>
           <div>
             <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
-              We help B2B tech companies compete, scale, and grow with
+              Hi, we help B2B tech companies compete, scale, and grow with
               hands-on go-to-market advice, built from having actually done
               the job ourselves rather than just advised on it from the
-              sidelines. We&rsquo;re a small, execution-focused team, not a
-              big agency with layers of account management standing between
-              you and the person actually doing the work — if something
-              needs doing, we roll up our sleeves and do it alongside you.
+              sidelines.
+            </p>
+            <p className="mt-4 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
+              We&rsquo;re a small, execution-focused team; if something needs
+              doing, we roll up our sleeves and do it alongside you.
             </p>
             <Link href="/contact" className={`${ctaSolid} mt-5`}>
               Let&rsquo;s get started
@@ -37,18 +38,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Start Where You Are */}
+      {/* Revenue-as-a-Service */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          Start Where You Are
+          Revenue-as-a-Service
         </h2>
+        <p className="mt-4 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
+          We believe that growing companies need a Revenue Department, not
+          siloed sales and marketing teams, and we provide this as a service.
+          It&rsquo;s a blend of sales, marketing, business development, and
+          account management that works for and with your business, while you
+          get on with the business of building a great product.
+        </p>
         <div className="mt-8 grid grid-cols-1 gap-7 md:grid-cols-3">
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
-            <h3 className="font-display text-[22px] font-semibold">Growth</h3>
+            <h3 className="font-display text-[22px] font-semibold">For Growth</h3>
             <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
               If you&rsquo;re a B2B SaaS company trying to grow with a small
-              team, you probably don&rsquo;t need more theory — you need
-              clear thinking, experienced hands, and help turning &ldquo;good
+              team, you probably don&rsquo;t need more theory, you need clear
+              thinking, experienced hands, and help turning &ldquo;good
               enough&rdquo; into an actual growth engine.
             </p>
             <Link
@@ -59,7 +67,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex flex-col border-t-[6px] border-orange pt-6">
-            <h3 className="font-display text-[22px] font-semibold">UK Expansion</h3>
+            <h3 className="font-display text-[22px] font-semibold">For UK Expansion</h3>
             <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
               Heading into the UK from the US or mainland Europe is a genuine
               milestone, and it&rsquo;s easy to either rush it or wait too
@@ -74,11 +82,11 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex flex-col border-t-[6px] border-navy pt-6">
-            <h3 className="font-display text-[22px] font-semibold">Investors</h3>
+            <h3 className="font-display text-[22px] font-semibold">For Investors</h3>
             <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
               From pre-investment due diligence to hands-on fractional
-              leadership, we help turn founder-led hustle into something that
-              actually looks like portfolio value on paper.
+              leadership, we help portfolio companies turn their innovation
+              into growth, revenue, and a return on investment.
             </p>
             <Link
               href="/investors"
@@ -90,23 +98,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Awareness / Revenue / Trust */}
+      {/* The Outcome */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <div className="grid grid-cols-1 items-center gap-16 md:grid-cols-[30%_70%]">
           <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-            Awareness.
-            <br />
-            Revenue.
-            <br />
-            Trust.
+            The Outcome
           </h2>
           <p className="max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
-            Awareness, Revenue, Trust — that&rsquo;s the whole point, and
-            it&rsquo;s been the same three things since we started doing
-            this. Not clicks, not vanity metrics, not a pipeline report that
-            looks better than the pipeline actually is. If something
-            we&rsquo;re doing doesn&rsquo;t move one of those three, we
-            probably shouldn&rsquo;t be doing it.
+            <strong>Awareness, Revenue, Trust. </strong>We believe this is the
+            goal of the revenue department and goals we set ourselves. Not
+            clicks, not vanity metrics, not a pipeline report that looks
+            better than the pipeline actually is. If something we&rsquo;re
+            doing doesn&rsquo;t move one of those three, we probably
+            shouldn&rsquo;t be doing it.
           </p>
         </div>
       </section>
@@ -120,27 +124,22 @@ export default function Home() {
           Our engagements are agile, providing just the help you need, with a
           flexible deployment model.
         </p>
-        <div className="mt-8 grid grid-cols-1 border-t border-hair md:grid-cols-4">
+        <div className="mt-8 grid grid-cols-1 border-t border-hair md:grid-cols-3">
           {[
             {
               title: "Evaluate",
               color: "text-blue",
-              body: "We stress-test your go-to-market strategy, data, messaging, systems, and team, so you get a clear, honest picture of what's working, what's slowing revenue, and what actually needs to change.",
+              body: "We quickly stress-test your go-to-market strategy, data, messaging, and execution, so you get a clear picture of what's working, what's slowing revenue, and what needs to change.",
             },
             {
-              title: "Advise",
+              title: "Engage",
               color: "text-orange",
-              body: "We work with your leadership team to refine positioning, clarify priorities, and align sales and marketing around a plan people can actually run with, not just a document everyone nods at once.",
+              body: "We work with your team to refine positioning, clarify priorities, and align sales and marketing around an executable revenue plan.",
             },
             {
               title: "Execute",
               color: "text-navy",
-              body: "We embed with your team to actually deliver it: building campaigns, improving conversion, sharpening messaging, fixing the tooling that's quietly getting in the way.",
-            },
-            {
-              title: "Lead",
-              color: "text-blue",
-              body: "Fractional marketing or sales leadership steps in to provide experienced oversight and coach your team, without the cost or delay of a full-time hire.",
+              body: "We embed with your team to deliver it: building campaigns, improving conversion, sharpening messaging, fixing the tooling that's quietly getting in the way.",
             },
           ].map((cell, i, arr) => (
             <div
@@ -239,52 +238,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Not Sure Where to Start */}
-      <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          Not Sure Where to Start?
-        </h2>
-        <div className="mt-8 grid grid-cols-1 gap-16 md:grid-cols-[40%_60%]">
-          <div className="flex flex-col">
-            <p className="max-w-[460px] text-lg leading-[1.7] text-[#42465c]">
-              Take the ten-minute Velocity Assessment and get a free,
-              personalised read on how your sales and marketing stack up — no
-              obligation, no sales call required first.
-            </p>
-            <Link href="/contact" className={`${ctaAccent} mt-auto self-start`}>
-              Velocity Assessment
-            </Link>
-          </div>
-          <div className="flex flex-col">
-            <p className="max-w-[460px] text-lg leading-[1.7] text-[#42465c]">
-              Ready for something more specific? Each offer has its own
-              Roadmap — a fixed-scope, paid diagnostic that hands you a clear
-              plan for what&rsquo;s actually holding things back, yours to
-              run with whether or not you bring us in to execute it.
-            </p>
-            <div className="mt-auto flex flex-wrap gap-3 pt-4">
-              <Link href="/growth" className={ctaOutline}>
-                Growth Roadmap
-              </Link>
-              <Link href="/uk-expansion" className={ctaOutline}>
-                UK Roadmap
-              </Link>
-              <Link href="/investors" className={ctaOutline}>
-                Revenue Roadmap
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
+      {/* Ready to Start */}
       <div className="bg-navy px-12 py-24 text-center text-white">
-        <h2 className="font-display mx-auto mb-7 max-w-[760px] text-[32px] font-bold leading-tight tracking-tight text-white md:text-[46px]">
-          Every company&rsquo;s story is different, and we&rsquo;d like to
-          hear yours.
+        <h2 className="font-display mx-auto mb-3 max-w-[760px] text-[32px] font-bold leading-tight tracking-tight text-white md:text-[46px]">
+          Ready to Start?
         </h2>
+        <h3 className="font-display mx-auto mb-7 max-w-[640px] text-xl font-semibold text-white/90">
+          Turn Your Sales &amp; Marketing Into a Growth Engine.
+        </h3>
+        <p className="mx-auto mb-9 max-w-[640px] text-lg leading-[1.7] text-white/80">
+          Skip months of trial and error with our{" "}
+          <strong className="text-white">8-week Velocity Sprint</strong>, a
+          high-intensity, fixed-scope program to audit your revenue
+          operations, build your outbound playbook, and launch active sales
+          campaigns.
+        </p>
         <Link href="/contact" className={ctaAccent}>
-          Book a 30-minute consultation
+          Discover The Velocity Sprint
         </Link>
       </div>
     </main>
