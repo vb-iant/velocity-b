@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import { AnimatedChevron } from "@/components/AnimatedChevron";
 
 export const metadata = {
   title: "UK Expansion — Velocity-B",
@@ -10,71 +10,110 @@ const ctaOutline =
   "inline-block border-2 border-navy px-[30px] py-4 text-[15px] font-bold text-navy";
 const ctaAccent = "inline-block bg-orange px-[30px] py-4 text-[15px] font-bold text-navy";
 
-function PlainList({ items }: { items: ReactNode[] }) {
-  return (
-    <ul className="mt-5">
-      {items.map((item, i) => (
-        <li
-          key={i}
-          className={`relative border-t border-hair py-3.5 pl-7 text-[16.5px] leading-[1.7] text-[#42465c] ${
-            i === items.length - 1 ? "border-b" : ""
-          }`}
-        >
-          <span className="absolute left-0 font-bold text-blue">—</span>
-          {item}
-        </li>
-      ))}
-    </ul>
-  );
-}
+const colorClasses = {
+  blue: { border: "border-blue", text: "text-blue", dot: "bg-blue" },
+  orange: { border: "border-orange", text: "text-orange", dot: "bg-orange" },
+  navy: { border: "border-navy", text: "text-navy", dot: "bg-navy" },
+};
 
 const CHALLENGES = [
-  "The first sales leader who takes months to hire and onboard doesn't work out, and the momentum, revenue, and budget spent goes with them.",
-  "Expensive senior salespeople get hired but struggle to sell in a market that's untested and unproven for you.",
-  "It's hard to engage and manage the right agency partners, grow the channel network, and build an ecosystem remotely.",
-  "Building buyer trust and customer advocacy remotely is difficult without in-market, in-time-zone resources.",
-  "Local marketing conditions, category competitors, buying groups, and processes differ from those back home.",
-  "Early customers churn, or cross-sell and upsell opportunities get lost, without proper local account management.",
+  {
+    kicker: "01",
+    color: "blue" as const,
+    body: "The first sales leader who takes months to hire and onboard doesn't work out, and the momentum, revenue, and budget spent goes with them.",
+  },
+  {
+    kicker: "02",
+    color: "orange" as const,
+    body: "Expensive senior salespeople get hired but struggle to sell in a market that's untested and unproven for you.",
+  },
+  {
+    kicker: "03",
+    color: "navy" as const,
+    body: "It's hard to engage and manage the right agency partners, grow the channel network, and build an ecosystem remotely.",
+  },
+  {
+    kicker: "04",
+    color: "blue" as const,
+    body: "Building buyer trust and customer advocacy remotely is difficult without in-market, in-time-zone resources.",
+  },
+  {
+    kicker: "05",
+    color: "orange" as const,
+    body: "Local marketing conditions, category competitors, buying groups, and processes differ from those back home.",
+  },
+  {
+    kicker: "06",
+    color: "navy" as const,
+    body: "Early customers churn, or cross-sell and upsell opportunities get lost, without proper local account management.",
+  },
 ];
 
 const SERVICE_COL_1 = [
-  <>
-    <strong>Fractional in-market representation</strong> — working as you,
-    with your voice, values, and proposition properly embedded in the UK
-    market, not represented from a distance.
-  </>,
-  <>
-    <strong>A full-service satellite team</strong> — sales leadership, local
-    onshore business development, account management, customer success,
-    creative, and field marketing, all in one place.
-  </>,
-  <>
-    <strong>Shared performance goals</strong> — our fee structure mixes
-    retainer and performance, so we&rsquo;ve got real skin in the game
-    alongside you, not just an invoice to send.
-  </>,
+  {
+    label: "Fractional in-market representation",
+    body: "working as you, with your voice, values, and proposition properly embedded in the UK market, not represented from a distance.",
+  },
+  {
+    label: "A full-service satellite team",
+    body: "sales leadership, local onshore business development, account management, customer success, creative, and field marketing, all in one place.",
+  },
+  {
+    label: "Shared performance goals",
+    body: "our fee structure mixes retainer and performance, so we've got real skin in the game alongside you, not just an invoice to send.",
+  },
 ];
 
 const SERVICE_COL_2 = [
-  <>
-    <strong>Flexible, agile delivery</strong> — a fast, tailored onboarding
-    process to start, then we scale the service up or down as you actually
-    need it.
-  </>,
-  <>
-    <strong>Back-office support</strong> — trusted local accountants and
-    legal partners who handle the admin of setting up and staying compliant
-    in the UK, so you don&rsquo;t have to learn it from scratch.
-  </>,
+  {
+    label: "Flexible, agile delivery",
+    body: "a fast, tailored onboarding process to start, then we scale the service up or down as you actually need it.",
+  },
+  {
+    label: "Back-office support",
+    body: "trusted local accountants and legal partners who handle the admin of setting up and staying compliant in the UK, so you don't have to learn it from scratch.",
+  },
 ];
 
-const ROADMAP_ITEMS = [
-  "Local competitive landscape analysis",
-  "Market sizing and valuation",
-  "Positioning and ICP fit for the UK market",
-  "Local market dynamics, analysts, and influencers",
-  "Channel and route-to-market mapping",
-  "A recommended go-to-market strategy",
+const SPRINT_PHASES = [
+  {
+    label: "Phase 1 · Weeks 1–3",
+    title: "Foundation & Architecture",
+    color: "blue" as const,
+    items: [
+      {
+        title: "Market Audit",
+        body: "Local competitive landscape analysis, market size and valuation.",
+      },
+      {
+        title: "ICP & Positioning",
+        body: "Define local target buyer profiles and craft high-converting multi-channel messaging.",
+      },
+      {
+        title: "The UK Growth Playbook",
+        body: "A complete, repeatable go-to-market execution blueprint.",
+      },
+    ],
+  },
+  {
+    label: "Phase 2 · Weeks 4–8",
+    title: "Live Execution & Market Testing",
+    color: "orange" as const,
+    items: [
+      {
+        title: "Campaign Launch",
+        body: "Active sales, marketing, and BD execution targeting your highest-value prospects.",
+      },
+      {
+        title: "Weekly Optimization Loops",
+        body: "Real-time data collection, message testing, and pipeline review.",
+      },
+      {
+        title: "Scaling Roadmap",
+        body: "Data-backed recommendations for full long-term scaling.",
+      },
+    ],
+  },
 ];
 
 export default function UkExpansionPage() {
@@ -84,15 +123,16 @@ export default function UkExpansionPage() {
       <section className="mx-auto max-w-[1180px] px-12 py-20">
         <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
           <div>
-            <h1 className="font-display text-[36px] font-bold leading-[1.04] tracking-tight md:text-[72px]">
+            <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
+              <AnimatedChevron className="text-blue" />
               The UK, without the guesswork.
             </h1>
-            <div className="font-display mt-0.5 text-[36px] font-bold leading-[1.04] tracking-tight text-blue md:text-[72px]">
+            <h2 className="font-display mt-2 text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
               Or the cold start.
-            </div>
+            </h2>
           </div>
           <div>
-            <p className="max-w-[600px] text-lg leading-[1.7] text-[#42465c]">
+            <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
               Whether you&rsquo;re heading east from the U.S. or west from
               Europe, entering the UK&rsquo;s lucrative tech market can be a
               milestone in your company&rsquo;s growth, and we can help.
@@ -111,21 +151,22 @@ export default function UkExpansionPage() {
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-[1.4fr_1fr]">
           <div>
-            <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
+            <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
+              <AnimatedChevron className="text-blue" />
               Land in the UK with Velocity
             </h2>
-            <p className="max-w-none text-lg leading-[1.7] text-[#42465c]">
+            <p className="mt-4 max-w-none text-lg leading-[1.7] text-[#42465c]">
               You&rsquo;ve already proven the model back home, so the UK
               looks like the obvious next step: same language, a market that
               feels familiar on the surface, a lot of the same buyer logic
               underneath. Except it isn&rsquo;t quite the same.
             </p>
-            <p className="max-w-none text-lg leading-[1.7] text-[#42465c]">
+            <p className="mt-4 max-w-none text-lg leading-[1.7] text-[#42465c]">
               Most companies end up doing one of two things: sending someone
               over cold and hoping for the best, or waiting so long to make
               the move that the opportunity&rsquo;s moved on without them.
             </p>
-            <p className="max-w-none text-lg leading-[1.7] text-[#42465c]">
+            <p className="mt-4 max-w-none text-lg leading-[1.7] text-[#42465c]">
               We&rsquo;re that local team, from day one. Not a reseller, not
               a logo slapped onto a partnership page — an actual extension
               of you, in the UK, from the first conversation through to a
@@ -166,50 +207,49 @@ export default function UkExpansionPage() {
 
       {/* Challenges We've Seen */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-[0.7fr_1fr]">
-          <div>
-            <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
-              Challenges We&rsquo;ve Seen
-            </h2>
-            <p className="max-w-none text-lg leading-[1.7] text-[#42465c]">
-              It&rsquo;s hard to keep all the plates spinning remotely in a
-              new market, while you&rsquo;re still focused on building sales
-              and channels at home. We&rsquo;ve seen these challenges close
-              up — maybe you&rsquo;ll recognise them.
-            </p>
-          </div>
-          <PlainList items={CHALLENGES} />
+        <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
+          <AnimatedChevron className="text-blue" />
+          Challenges We&rsquo;ve Seen
+        </h2>
+        <p className="mt-3 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
+          It&rsquo;s hard to keep all the plates spinning remotely in a new
+          market, while you&rsquo;re still focused on building sales and
+          channels at home. We&rsquo;ve seen these challenges close up —
+          maybe you&rsquo;ll recognise them.
+        </p>
+        <div className="mt-10 grid grid-cols-1 gap-x-10 gap-y-10 md:grid-cols-2">
+          {CHALLENGES.map((item) => {
+            const c = colorClasses[item.color];
+            return (
+              <div key={item.kicker} className={`border-t-[6px] pt-6 ${c.border}`}>
+                <span className={`font-display mb-2 block text-[11px] font-extrabold tracking-[0.08em] ${c.text}`}>
+                  {item.kicker}
+                </span>
+                <p className="text-lg leading-[1.7] text-[#42465c]">{item.body}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
 
       {/* How We Help */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
+        <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
+          <AnimatedChevron className="text-blue" />
           How We Help
         </h2>
-        <p className="max-w-[640px] text-lg leading-[1.7] text-[#42465c]">
-          Three ways to engage, customized to you, built for Series A/B
+        <p className="mt-3 max-w-[640px] text-lg leading-[1.7] text-[#42465c]">
+          Two ways to engage, customized to you, built for Series A/B
           companies who&rsquo;ve already got product-market fit at home and a
           12–18 month goal to establish traction in the UK. You&rsquo;re not
           testing an idea here; you&rsquo;re bringing a proven one into a new
           market, and that deserves to be done properly rather than
           experimentally.
         </p>
-        <div className="mt-8 grid grid-cols-1 gap-7 md:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-7 md:grid-cols-2">
           <div className="border-t-[6px] border-blue pt-6">
-            <h3 className="font-display text-[22px] font-semibold">UK Roadmap</h3>
-            <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
-              Before anything else, we hand you a roadmap for landing in the
-              UK: the competitive landscape, market sizing, how your
-              positioning and ICP actually fit, who the local analysts and
-              influencers are, a channel and route-to-market map, and a
-              recommended go-to-market path — yours to run with, whether or
-              not you bring us in to execute it.
-            </p>
-          </div>
-          <div className="border-t-[6px] border-orange pt-6">
             <h3 className="font-display text-[22px] font-semibold">UK-as-a-Service</h3>
-            <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               This is the core offer, and it does what it says: we run your
               UK presence as if we were your own team — sales, marketing,
               local account management, localised content, and everything in
@@ -217,9 +257,9 @@ export default function UkExpansionPage() {
               having to hire one from scratch.
             </p>
           </div>
-          <div className="border-t-[6px] border-navy pt-6">
+          <div className="border-t-[6px] border-orange pt-6">
             <h3 className="font-display text-[22px] font-semibold">GTM Support</h3>
-            <p className="mt-2 text-[15.5px] leading-[1.7] text-[#42465c]">
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
               For companies who want strategic and tactical help without
               taking on the full embedded-team model, we scope this to
               whatever&rsquo;s actually missing — fractional sales or
@@ -234,48 +274,96 @@ export default function UkExpansionPage() {
         </Link>
       </section>
 
-      {/* UK-as-a-Service panel */}
+      {/* UK-as-a-Service detail */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <div className="border border-hair bg-[#fafbfd] p-11">
-          <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
-            UK-as-a-Service
-          </h2>
-          <p className="max-w-none text-lg leading-[1.7] text-[#42465c]">
-            We become your UK team, in practice as much as in name:
-          </p>
-          <div className="mt-5 grid grid-cols-1 gap-x-10 md:grid-cols-2">
-            <PlainList items={SERVICE_COL_1} />
-            <PlainList items={SERVICE_COL_2} />
-          </div>
+        <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
+          <AnimatedChevron className="text-blue" />
+          UK-as-a-Service
+        </h2>
+        <p className="mt-3 max-w-none text-lg leading-[1.7] text-[#42465c]">
+          We become your UK team, in practice as much as in name:
+        </p>
+        <div className="mt-8 grid grid-cols-1 gap-x-10 md:grid-cols-2">
+          <ul className="space-y-5">
+            {SERVICE_COL_1.map((item) => (
+              <li key={item.label} className="border-t-[3px] border-blue pt-4">
+                <p className="text-lg leading-[1.7] text-[#42465c]">
+                  <strong className="font-display font-bold text-navy">
+                    {item.label}
+                  </strong>{" "}
+                  — {item.body}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <ul className="mt-5 space-y-5 md:mt-0">
+            {SERVICE_COL_2.map((item) => (
+              <li key={item.label} className="border-t-[3px] border-blue pt-4">
+                <p className="text-lg leading-[1.7] text-[#42465c]">
+                  <strong className="font-display font-bold text-navy">
+                    {item.label}
+                  </strong>{" "}
+                  — {item.body}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* Get Started with a Roadmap */}
+      {/* Get Started with a Velocity Sprint */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <div className="border border-hair bg-[#fafbfd] p-11">
-          <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
-            <div>
-              <h2 className="font-display text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
-                Get Started with a Roadmap
-              </h2>
-              <p className="max-w-none text-lg leading-[1.7] text-[#42465c]">
-                In a fixed scope, quick engagement, we evaluate the market
-                opportunity in the UK and provide a UK Expansion Roadmap,
-                yours to run with, whether or not you bring us in to execute
-                it.
-              </p>
-              <Link href="/contact" className={`${ctaAccent} mt-3.5`}>
-                Book an Appointment
-              </Link>
-            </div>
-            <PlainList items={ROADMAP_ITEMS} />
-          </div>
+        <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
+          <AnimatedChevron className="text-blue" />
+          Get Started with a Velocity Sprint
+        </h2>
+        <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
+          Reduce the risk, skip months of trial and error entering the UK,
+          with the <strong className="text-navy">8-Week Velocity Sprint</strong>{" "}
+          which gives you an instant read, with a tailored go-to-market
+          playbook for the UK, and live multi-channel execution that will
+          test the market.
+        </p>
+
+        <div className="mt-10 grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-2">
+          {SPRINT_PHASES.map((phase) => {
+            const c = colorClasses[phase.color];
+            return (
+              <div key={phase.title} className={`border-t-[6px] pt-6 ${c.border}`}>
+                <div className={`font-display text-[12px] font-bold uppercase tracking-[.08em] ${c.text}`}>
+                  {phase.label}
+                </div>
+                <h3 className="font-display mt-2 text-[24px] font-semibold">
+                  {phase.title}
+                </h3>
+                <ul className="mt-4">
+                  {phase.items.map((item, i) => (
+                    <li
+                      key={item.title}
+                      className={`relative border-hair py-3 pl-6 text-lg leading-[1.6] text-[#42465c] ${
+                        i !== 0 ? "border-t" : ""
+                      }`}
+                    >
+                      <span className={`absolute left-0 top-[19px] h-[6px] w-[6px] ${c.dot}`} />
+                      <strong className="text-navy">{item.title}</strong> —{" "}
+                      {item.body}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
+
+        <Link href="/velocity-sprint" className={`${ctaAccent} mt-10`}>
+          Let&rsquo;s get started
+        </Link>
       </section>
 
       {/* Our Experience */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-16 text-center">
-        <h2 className="font-display mb-3.5 text-[28px] font-bold leading-tight tracking-tight md:text-[46px]">
+        <h2 className="font-display mb-3.5 text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
+          <AnimatedChevron className="text-blue" />
           Our Experience
         </h2>
         <p className="mx-auto max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
@@ -303,7 +391,8 @@ export default function UkExpansionPage() {
 
       {/* Final CTA */}
       <div className="bg-navy px-12 py-24 text-center text-white">
-        <h2 className="font-display mx-auto mb-7 max-w-[760px] text-[28px] font-bold leading-tight tracking-tight text-white md:text-[46px]">
+        <h2 className="font-display mx-auto mb-7 max-w-[760px] text-[32px] font-bold leading-tight tracking-tight text-white md:text-[46px]">
+          <AnimatedChevron className="text-blue" />
           Ready to Land?
         </h2>
         <p className="mx-auto mb-7 max-w-[600px] text-[#cfd6e8]">
