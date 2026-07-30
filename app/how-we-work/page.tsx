@@ -34,8 +34,8 @@ const IMPLEMENT_SERVICES = [
     color: "border-navy text-navy",
   },
   {
-    title: "Local account management",
-    body: "A real point of contact in-market, not a rep working a spreadsheet from another time zone.",
+    title: "Account management",
+    body: "A real point of contact in-market, understanding customer needs and cross-sell/up-sell opportunities.",
     color: "border-blue text-blue",
   },
   {
@@ -53,7 +53,9 @@ export default function HowWeWorkPage() {
         <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
           <div>
             <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
-              <AnimatedChevron className="text-blue" />Forget the TLAs.
+              <AnimatedChevron className="text-blue" />Forget
+              <br />
+              the TLAs.
             </h1>
             <h2 className="font-display mt-2 text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
               Just GSD.
@@ -62,8 +64,8 @@ export default function HowWeWorkPage() {
           <div>
             <p className="max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
               GSD: Get Sh*t Done. It&rsquo;s the only TLA we&rsquo;ll own, no
-              strategy frameworks, no decks, no process for the sake of
-              process.
+              strategy frameworks, no pointless decks, no process for the
+              sake of process.
             </p>
             <p className="mt-4 max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
               We&rsquo;ve done this before, different companies, different
@@ -135,10 +137,10 @@ export default function HowWeWorkPage() {
               key={service.title}
               className={`-mt-px border-b border-r border-hair border-t-4 p-6 ${service.color.split(" ")[0]}`}
             >
-              <h3 className={`font-display mb-2 text-base font-bold ${service.color.split(" ")[1]}`}>
+              <h3 className={`font-display mb-2.5 text-[17px] font-bold ${service.color.split(" ")[1]}`}>
                 {service.title}
               </h3>
-              <p className="text-sm leading-[1.6] text-[#42465c]">{service.body}</p>
+              <p className="text-lg leading-[1.6] text-[#42465c]">{service.body}</p>
             </div>
           ))}
         </div>
