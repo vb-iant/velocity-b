@@ -5,8 +5,23 @@ import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
 import { PRIMARY_NAV, NAV_CTA } from "@/lib/nav";
 
+// Single-purpose conversion landing pages get a lean, logo-only header —
+// the full site nav would just be an exit ramp off the page's one job.
+// Add a route prefix here if another landing page needs the same treatment.
+const LEAN_HEADER_ROUTES = ["/velocity-sprint"];
+
 export function SiteHeader() {
   const pathname = usePathname();
+
+  if (LEAN_HEADER_ROUTES.some((route) => pathname.startsWith(route))) {
+    return (
+      <header className="mx-auto flex max-w-[1180px] items-center px-12 py-7">
+        <Link href="/" aria-label="Velocity-B home">
+          <Logo />
+        </Link>
+      </header>
+    );
+  }
 
   return (
     <header className="mx-auto flex max-w-[1180px] items-center justify-between px-12 py-7">

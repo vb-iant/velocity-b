@@ -301,7 +301,7 @@ export default function Home() {
           operations, build your outbound playbook, and launch active sales
           campaigns.
         </p>
-        <Link href="/contact" className={ctaAccent}>
+        <Link href="/velocity-sprint" className={ctaAccent}>
           Discover The Velocity Sprint
         </Link>
       </div>
