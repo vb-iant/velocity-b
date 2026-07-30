@@ -53,17 +53,19 @@ export default function HowWeWorkPage() {
         <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
           <div>
             <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
-              <AnimatedChevron className="text-blue" />How
+              <AnimatedChevron className="text-blue" />Forget the TLAs.
             </h1>
-            <div className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
-              We
-            </div>
-            <h2 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
-              Work
+            <h2 className="font-display mt-2 text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
+              Just GSD.
             </h2>
           </div>
           <div>
             <p className="max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
+              GSD: Get Sh*t Done. It&rsquo;s the only TLA we&rsquo;ll own, no
+              strategy frameworks, no decks, no process for the sake of
+              process.
+            </p>
+            <p className="mt-4 max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
               We&rsquo;ve done this before, different companies, different
               sectors, the same underlying pattern turning up again and
               again, where growth stalls, or the story isn&rsquo;t landing,
