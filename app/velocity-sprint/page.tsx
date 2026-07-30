@@ -192,9 +192,9 @@ export default function VelocitySprintPage() {
             </div>
           ))}
         </div>
-        <Link href="#form" className={`${ctaSolid} mt-10`}>
+        <a href="#form" className={`${ctaSolid} mt-10`}>
           Ready to start?
-        </Link>
+        </a>
       </section>
 
       {/* Not quite ready */}
