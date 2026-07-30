@@ -90,9 +90,7 @@ export default function HowWeWorkPage() {
             <p className="text-lg leading-[1.7] text-[#42465c]">
               What we&rsquo;ve got isn&rsquo;t a slide deck full of frameworks
               with clever names for their own sake; it&rsquo;s a way of
-              working called DRIVE, and it&rsquo;s the same method whether
-              we&rsquo;re untangling your pipeline, getting a UK launch ready
-              to land, or making a portfolio company investor-ready.
+              working called DRIVE.
             </p>
             <p className="mt-4 text-lg leading-[1.7] text-[#42465c]">
               Five stages, one thread running through everything we do; we
