@@ -283,7 +283,7 @@ export default function GrowthPage() {
       <div className="bg-navy px-12 py-24 text-center text-white">
         <h2 className="font-display mx-auto mb-7 max-w-[760px] text-[32px] font-bold leading-tight tracking-tight text-white md:text-[46px]">
           <AnimatedChevron className="text-blue" />Every company&rsquo;s
-          story is different, and we&rsquo;d genuinely like to hear yours.
+          story is different, and we&rsquo;d like to hear yours.
         </h2>
         <Link href="/contact" className={ctaAccent}>
           Get in touch
