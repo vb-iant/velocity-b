@@ -121,10 +121,10 @@ export default function GrowthPage() {
         <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
           <div>
             <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
-              <AnimatedChevron className="text-blue" />What got you here,
+              <AnimatedChevron className="text-blue" />Good enough got you here.
             </h1>
             <h2 className="font-display mt-2 text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
-              Might not get you to what&rsquo;s next.
+              It won&rsquo;t get you to what&rsquo;s next.
             </h2>
           </div>
           <div>
