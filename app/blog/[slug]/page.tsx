@@ -84,14 +84,6 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[760px] px-12 pb-0 pt-8">
-        {post.frontmatter.excerpt && (
-          <p className="font-body text-xl italic leading-[1.6] text-[#42465c]">
-            {post.frontmatter.excerpt}
-          </p>
-        )}
-      </section>
-
       {/* Body */}
       <section className="mx-auto max-w-[760px] px-12 pt-14">
         <div className="blog-prose">
