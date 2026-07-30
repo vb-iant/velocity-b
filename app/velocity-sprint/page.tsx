@@ -4,6 +4,7 @@ import { AnimatedChevron } from "@/components/AnimatedChevron";
 import { HubspotForm } from "@/components/HubspotForm";
 
 const ctaAccent = "inline-block bg-orange px-[30px] py-4 text-[15px] font-bold text-navy";
+const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
 
 export const metadata: Metadata = {
   title: "The Velocity Sprint | Velocity-B",
@@ -152,7 +153,7 @@ export default function VelocitySprintPage() {
             ))}
           </div>
 
-          <div className="sticky top-8 border-t-[6px] border-navy bg-[#fafbfd] px-8 py-9">
+          <div id="form" className="sticky top-8 scroll-mt-8 border-t-[6px] border-navy bg-[#fafbfd] px-8 py-9">
             <h3 className="font-display text-[22px] font-semibold">
               Ready to Build Your Revenue Engine?
             </h3>
@@ -191,6 +192,9 @@ export default function VelocitySprintPage() {
             </div>
           ))}
         </div>
+        <Link href="#form" className={`${ctaSolid} mt-10`}>
+          Ready to start?
+        </Link>
       </section>
 
       {/* Not quite ready */}
