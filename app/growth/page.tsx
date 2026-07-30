@@ -187,28 +187,30 @@ export default function GrowthPage() {
               a great product.
             </p>
           </div>
-          <ul className="space-y-5">
-            {REVENUE_AS_A_SERVICE.map((item) => (
-              <li key={item.label} className="border-t-[3px] border-blue pt-4">
-                <p className="text-lg leading-[1.7] text-[#42465c]">
-                  <strong className="font-display font-bold text-navy">
-                    {item.label}
-                  </strong>{" "}
-                  — {item.body}
-                </p>
-              </li>
-            ))}
-          </ul>
+          <div>
+            <ul className="space-y-5">
+              {REVENUE_AS_A_SERVICE.map((item) => (
+                <li key={item.label} className="border-t-[3px] border-blue pt-4">
+                  <p className="text-lg leading-[1.7] text-[#42465c]">
+                    <strong className="font-display font-bold text-navy">
+                      {item.label}
+                    </strong>{" "}
+                    — {item.body}
+                  </p>
+                </li>
+              ))}
+            </ul>
+            <Link href="/contact" className={`${ctaOutline} mt-8`}>
+              Get in touch — find out more
+            </Link>
+          </div>
         </div>
-        <Link href="/contact" className={`${ctaOutline} mt-10`}>
-          Get in touch — find out more
-        </Link>
       </section>
 
       {/* The Velocity Sprint */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          <AnimatedChevron className="text-blue" />The Velocity Sprint
+          <AnimatedChevron className="text-blue" />Start with a Velocity Sprint
         </h2>
         <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
           Skip months of trial and error, redundant MarTech costs, and
