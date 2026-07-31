@@ -101,7 +101,7 @@ export default function VelocitySprintPage() {
 
       {/* The Velocity Sprint / form */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <div className="grid grid-cols-1 items-start gap-16 md:grid-cols-[1.15fr_0.85fr]">
+        <div className="grid grid-cols-1 items-start gap-16 md:grid-cols-2">
           <div>
             <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
               <AnimatedChevron className="text-blue" />The Velocity Sprint
