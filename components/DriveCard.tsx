@@ -3,34 +3,65 @@
 import { useEffect, useRef, useState } from "react";
 
 const STAGES = [
-  { label: "Diagnose", desc: "Understanding what's actually going on — not the easiest story to tell." },
-  { label: "Refine", desc: "Turning findings into a sharper, more focused plan." },
-  { label: "Implement", desc: "Rolling up sleeves — building and launching alongside your team." },
-  { label: "Validate", desc: "Checking results against real numbers." },
-  { label: "Expand", desc: "Scaling what works." },
+  {
+    label: "Evaluate",
+    short: "EV",
+    desc: "Quickly stress-test what's slowing revenue, and what needs to change.",
+    color: "blue",
+  },
+  {
+    label: "Engage",
+    short: "EN",
+    desc: "Work with your team to build an executable revenue plan.",
+    color: "navy",
+  },
+  {
+    label: "Execute",
+    short: "EX",
+    desc: "Let's make it happen!",
+    color: "orange",
+  },
 ] as const;
 
-const SCHEDULE_MS = [150, 1750, 3350, 4950, 6550, 8300]; // 5 stages + summary
-const LOOP_MS = 11200;
+const TEXT_COLOR: Record<string, string> = {
+  blue: "text-blue",
+  navy: "text-navy",
+  orange: "text-orange",
+};
 
-// scene index 0-4 = a DRIVE stage, scene index 5 = the summary badge row
+const BORDER_COLOR: Record<string, string> = {
+  blue: "border-blue",
+  navy: "border-navy",
+  orange: "border-orange",
+};
+
+const BG_COLOR: Record<string, string> = {
+  blue: "bg-blue",
+  navy: "bg-navy",
+  orange: "bg-orange",
+};
+
+const SCHEDULE_MS = [150, 1750, 3350, 5100]; // 3 stages + summary
+const LOOP_MS = 8100;
+
+// scene index 0-2 = a stage, scene index 3 = the summary badge row
 type Scene = number;
 
 function StageScene({ index }: { index: number }) {
   const stage = STAGES[index];
-  const isLast = index === 4;
+  const isLast = index === STAGES.length - 1;
   return (
     <>
       <div className="mb-6 flex items-center justify-between">
         <span className="font-display text-xs font-bold tracking-[0.08em] text-navy">
-          STAGE 0{index + 1} / 05
+          STAGE 0{index + 1} / 03
         </span>
         <div className="flex gap-1.5">
           {STAGES.map((_, i) => (
             <div
               key={i}
               className={`h-[7px] w-[7px] rounded-full ${
-                i <= index ? "bg-blue" : "bg-navy/15"
+                i <= index ? BG_COLOR[stage.color] : "bg-navy/15"
               }`}
             />
           ))}
@@ -39,14 +70,14 @@ function StageScene({ index }: { index: number }) {
       <div className="my-4 flex items-center gap-3">
         <span
           className={`font-display text-[clamp(36px,7.5vw,64px)] font-extrabold leading-none tracking-tight ${
-            isLast ? "text-orange" : "text-blue"
+            isLast ? "text-orange" : TEXT_COLOR[stage.color]
           }`}
         >
           {stage.label}
         </span>
         <span
           className={`font-display text-[clamp(42px,8.5vw,72px)] font-extrabold leading-none ${
-            isLast ? "text-orange" : "text-blue"
+            isLast ? "text-orange" : TEXT_COLOR[stage.color]
           }`}
         >
           &gt;
@@ -64,23 +95,27 @@ function SummaryScene() {
         A REPEATABLE GROWTH PROCESS
       </div>
       <div className="mb-7 font-display text-[clamp(24px,4.5vw,34px)] font-extrabold tracking-tight text-navy">
-        The DRIVE Methodology
+        Evaluate. Engage. Execute.
       </div>
       <div className="flex items-start justify-between">
         {STAGES.map((s, i) => {
-          const isLast = i === 4;
+          const isLast = i === STAGES.length - 1;
           return (
             <div key={s.label} className="relative flex flex-1 flex-col items-center">
               <div
-                className={`flex h-9 w-9 items-center justify-center font-display text-sm font-extrabold ${
+                className={`flex h-9 w-9 items-center justify-center font-display text-[11px] font-extrabold ${
                   isLast
                     ? "rounded-lg bg-orange text-white"
-                    : "rounded-full border-2 border-blue bg-white text-navy"
+                    : `rounded-full border-2 bg-white ${BORDER_COLOR[s.color]} ${TEXT_COLOR[s.color]}`
                 }`}
               >
-                {s.label[0]}
+                {s.short}
               </div>
-              <div className="mt-2 text-center font-display text-[8.5px] font-bold uppercase tracking-wider text-navy">
+              <div
+                className={`mt-2 text-center font-display text-[8.5px] font-bold uppercase tracking-wider ${
+                  isLast ? "text-navy" : TEXT_COLOR[s.color]
+                }`}
+              >
                 {s.label}
               </div>
               {!isLast && (
@@ -149,7 +184,7 @@ export function DriveCard() {
           key={visibleScene}
           className="absolute inset-0 flex flex-col justify-center transition-opacity duration-500"
         >
-          {visibleScene === 5 ? <SummaryScene /> : <StageScene index={visibleScene} />}
+          {visibleScene === 3 ? <SummaryScene /> : <StageScene index={visibleScene} />}
         </div>
       </div>
     </div>
