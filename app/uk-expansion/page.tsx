@@ -52,7 +52,7 @@ const CHALLENGES = [
 const WHAT_WE_DO = [
   {
     label: "Fractional in-market representation",
-    body: "working as you, with your voice, values, and proposition properly embedded in the UK market, not represented from a distance.",
+    body: "working as you, with your voice, values, and proposition embedded in the UK market, not represented from a distance.",
   },
   {
     label: "A full-service satellite team",
