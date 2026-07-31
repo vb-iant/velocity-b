@@ -18,7 +18,7 @@ export default function Home() {
               <AnimatedChevron className="text-blue" />Growth doesn&rsquo;t need more buzzwords.
             </h1>
             <h2 className="font-display mt-2 text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
-              It needs someone who&rsquo;s actually done it.
+              It needs someone who&rsquo;s been there and can do it.
             </h2>
           </div>
           <div>
