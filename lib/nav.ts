@@ -81,6 +81,7 @@ export const FOOTER_NAV: NavGroup[] = [
 
 // Direct contact links shown in the footer bottom row.
 export const FOOTER_CONNECT: NavLink[] = [
+  { label: "Contact Us", href: "/contact" },
   { label: "Email", href: "mailto:hello@velocity-b.com" },
   { label: "LinkedIn", href: "https://www.linkedin.com/company/velocityb" },
 ];

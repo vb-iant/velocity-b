@@ -30,17 +30,27 @@ export function SiteFooter() {
             <div className="mb-3 text-xs font-bold uppercase tracking-wider text-[#9aa0b5]">
               Connect
             </div>
-            {FOOTER_CONNECT.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") ? "noopener" : undefined}
-                className="mb-2 block text-sm text-navy hover:text-blue"
-              >
-                {link.label}
-              </a>
-            ))}
+            {FOOTER_CONNECT.map((link) =>
+              link.href.startsWith("/") ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="mb-2 block text-sm text-navy hover:text-blue"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noopener" : undefined}
+                  className="mb-2 block text-sm text-navy hover:text-blue"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
           </div>
         </div>
       </div>
