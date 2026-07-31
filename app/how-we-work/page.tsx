@@ -81,32 +81,51 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* DRIVE */}
+      {/* A Process for Growth */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <div className="grid grid-cols-1 items-center gap-14 md:grid-cols-2">
           <div>
             <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-              <AnimatedChevron className="text-blue" />DRIVE
+              <AnimatedChevron className="text-blue" />A Simple Process for Growth
             </h2>
-            <div className="font-display mb-4 mt-1 text-[22px] font-bold leading-[1.25] tracking-tight text-blue">
-              Diagnose. Refine. Implement. Validate. Expand.
+            <p className="mt-4 text-lg leading-[1.7] text-[#42465c]">
+              Our engagements are agile, providing just the help you need,
+              with a flexible deployment model.
+            </p>
+            <div className="mt-8 space-y-6">
+              <div>
+                <h3 className="font-display text-[19px] font-bold text-blue">
+                  Evaluate
+                </h3>
+                <p className="mt-1.5 text-lg leading-[1.6] text-[#42465c]">
+                  We quickly stress-test your go-to-market strategy, data,
+                  messaging, and execution, so you get a clear picture of
+                  what&rsquo;s working, what&rsquo;s slowing revenue, and
+                  what needs to change.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-display text-[19px] font-bold text-navy">
+                  Engage
+                </h3>
+                <p className="mt-1.5 text-lg leading-[1.6] text-[#42465c]">
+                  We work with your team to refine positioning, clarify
+                  priorities, and align sales and marketing around an
+                  executable revenue plan.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-display text-[19px] font-bold text-orange">
+                  Execute
+                </h3>
+                <p className="mt-1.5 text-lg leading-[1.6] text-[#42465c]">
+                  We embed with your team to deliver it: building
+                  campaigns, improving conversion, sharpening messaging,
+                  fixing the tooling that&rsquo;s quietly getting in the
+                  way.
+                </p>
+              </div>
             </div>
-            <p className="text-lg leading-[1.7] text-[#42465c]">
-              What we&rsquo;ve got isn&rsquo;t a slide deck full of frameworks
-              with clever names for their own sake; it&rsquo;s a way of
-              working called DRIVE.
-            </p>
-            <p className="mt-4 text-lg leading-[1.7] text-[#42465c]">
-              Five stages, one thread running through everything we do; we
-              don&rsquo;t skip straight to execution before we understand
-              the problem, and we don&rsquo;t disappear when the work has to
-              start.
-            </p>
-            <p className="mt-4 text-lg leading-[1.7] text-[#42465c]">
-              While some clients take the full cycle end to end, others
-              really just need the DR, a sharp, outside diagnosis and a plan
-              they can run with themselves through implement onwards.
-            </p>
           </div>
           <div>
             <DriveCard />
@@ -114,22 +133,16 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* What Implement Can Look Like */}
+      {/* How we work */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
-          <AnimatedChevron className="text-blue" />What Implement Can Look Like
+          <AnimatedChevron className="text-blue" />How we work
         </h2>
         <p className="mt-4 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
-          Not every engagement needs all five stages, and we won&rsquo;t
-          pretend it does just because a longer engagement suits us better.
-          Some people want the full cycle end to end. Others really just
-          need a sharp, outside diagnosis and a plan they can run with
-          themselves — so that&rsquo;s what we scope for, rather than
-          upselling a process nobody asked for.
-        </p>
-        <p className="mt-4 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
-          When we refer to implement and rolling up our sleeves, these are
-          the services we provide:
+          When we refer to rolling up our sleeves and getting sh*t done,
+          for each engagement, we provide a blend of capabilities from our
+          managing partners and trusted network of specialists, that
+          include:
         </p>
         <div className="mt-8 grid grid-cols-1 border-l border-t border-hair md:grid-cols-3">
           {IMPLEMENT_SERVICES.map((service) => (
