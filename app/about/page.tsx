@@ -118,24 +118,38 @@ export default function AboutPage() {
           <AnimatedChevron className="text-blue" />Why Velocity B?
         </h2>
         <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-3">
-          <p className="text-lg leading-[1.7] text-[#42465c]">
-            The experience of a seasoned commercial team, without the cost,
-            risk, or time of hiring one. We&rsquo;ve spent decades building
-            and leading go-to-market teams for successful B2B software
-            companies, in home markets and new ones alike.
-          </p>
-          <p className="text-lg leading-[1.7] text-[#42465c]">
-            We understand what actually separates &ldquo;just another new
-            entrant&rdquo; from someone buyers trust &mdash; the cultural
-            nuances, sales rhythm, and credibility cues that are easy to get
-            wrong from the outside, and easy to miss if you haven&rsquo;t
-            lived them.
-          </p>
-          <p className="text-lg leading-[1.7] text-[#42465c]">
-            We&rsquo;ve got a get-it-done attitude &mdash; we don&rsquo;t
-            just advise, we deliver. From diagnosis to execution, we roll our
-            sleeves up and make sure it adds up to measurable growth.
-          </p>
+          <div>
+            <h3 className="font-display text-[22px] font-semibold">
+              Senior experience, without the overhead
+            </h3>
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
+              We&rsquo;ve spent decades building and leading go-to-market
+              teams for successful B2B software companies, in home markets
+              and new ones alike &mdash; without the cost, risk, or time it
+              takes to hire that experience yourself.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-[22px] font-semibold">
+              Trust, not just a pitch
+            </h3>
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
+              We know the cultural nuances, sales rhythm, and credibility
+              cues that separate &ldquo;just another new entrant&rdquo; from
+              someone buyers trust &mdash; easy to get wrong from the
+              outside, easy to miss if you haven&rsquo;t lived them.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-[22px] font-semibold">
+              Get sh*t done
+            </h3>
+            <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
+              We don&rsquo;t just advise, we deliver &mdash; from diagnosis
+              to execution, sleeves rolled up, until it adds up to
+              measurable growth.
+            </p>
+          </div>
         </div>
         <Link href="/how-we-work" className={`${ctaAccent} mt-10`}>
           Learn How We Work
