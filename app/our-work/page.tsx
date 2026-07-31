@@ -113,14 +113,16 @@ export default function OurWorkPage() {
       </section>
 
       {/* Other projects */}
-      <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
+      <section className="mx-auto max-w-[1180px] px-12 pb-20">
         <div className="border-t-[6px] border-blue pt-6">
           <h3 className="font-display text-[22px] font-semibold">
             Other projects have included
           </h3>
-          <ul className="mt-3 max-w-[860px] list-disc space-y-2 pl-5 text-lg leading-[1.7] text-[#42465c]">
+          <ul className="mt-3 grid max-w-[860px] grid-cols-1 gap-x-12 gap-y-2 text-lg leading-[1.7] text-[#42465c] md:grid-cols-2">
             {OTHER_PROJECTS.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item} className="list-disc pl-5">
+                {item}
+              </li>
             ))}
           </ul>
         </div>
