@@ -118,10 +118,11 @@ export default function OurWorkPage() {
           <h3 className="font-display text-[22px] font-semibold">
             Other projects have included
           </h3>
-          <ul className="mt-3 grid max-w-[860px] grid-cols-1 gap-x-12 gap-y-2 text-lg leading-[1.7] text-[#42465c] md:grid-cols-2">
+          <ul className="mt-3 grid max-w-[860px] grid-cols-1 gap-x-12 gap-y-3 text-lg leading-[1.7] text-[#42465c] md:grid-cols-2">
             {OTHER_PROJECTS.map((item) => (
-              <li key={item} className="list-disc pl-5">
-                {item}
+              <li key={item} className="flex gap-3">
+                <span className="mt-[0.65em] h-[7px] w-[7px] shrink-0 rounded-full bg-blue" />
+                <span>{item}</span>
               </li>
             ))}
           </ul>
