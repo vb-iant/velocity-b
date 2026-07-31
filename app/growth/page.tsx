@@ -49,15 +49,22 @@ const colorClasses = {
   navy: { border: "border-navy", text: "text-navy" },
 };
 
-const REVENUE_AS_A_SERVICE = [
+const WHAT_WE_DO = [
   {
     label: "Fractional representation",
     body: "working as you, with your voice, values, and proposition properly embedded operating as you.",
   },
   {
     label: "A full-service revenue team",
-    body: "sales leadership, local onshore business development, account management, customer success, creative, and field marketing, all in one place.",
+    body: "sales leadership, onshore business development, account management, customer success, creative, and digital marketing.",
   },
+  {
+    label: "Revenue and marketing operations",
+    body: "we sort out the tech, the CRM, the digital platforms, the AI tools, and the data, to create a modern revenue platform.",
+  },
+];
+
+const HOW_WE_WORK = [
   {
     label: "Shared performance goals",
     body: "our fee structure mixes retainer and performance, so we've got real skin in the game alongside you, not just an invoice to send.",
@@ -67,8 +74,8 @@ const REVENUE_AS_A_SERVICE = [
     body: "a fast, tailored onboarding process to start, then we scale the service up or down as you actually need it.",
   },
   {
-    label: "Revenue and marketing operations",
-    body: "we sort out the tech, the CRM, the digital platforms, the AI tools, and the data, ensuring it's clean, segmented and integrated.",
+    label: "Our 3 E's approach",
+    body: "we keep the process light — Evaluate, Engage, and Execute — so we can quickly identify what matters and start adding value fast.",
   },
 ];
 
@@ -171,25 +178,26 @@ export default function GrowthPage() {
         <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight md:text-[46px]">
           <AnimatedChevron className="text-blue" />Revenue-as-a-Service
         </h2>
-        <div className="mt-8 grid grid-cols-1 gap-14 md:grid-cols-2">
+        <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
+          If you&rsquo;re a B2B SaaS company trying to grow with a small
+          team, you probably don&rsquo;t need more theory; you need clear
+          thinking, experienced hands, and help turning momentum into a
+          growth engine.
+        </p>
+        <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
+          And we provide this as a service, not siloed sales and marketing
+          teams, a blend of sales, marketing, business development, and
+          account management that works for and with your business, while
+          you get on with the business of building a great product.
+        </p>
+
+        <div className="mt-10 grid grid-cols-1 gap-x-14 gap-y-10 md:grid-cols-2">
           <div>
-            <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
-              If you&rsquo;re a B2B SaaS company trying to grow with a small
-              team, you probably don&rsquo;t need more theory, you need clear
-              thinking, experienced hands, and help turning &ldquo;good
-              enough&rdquo; into an actual growth engine.
-            </p>
-            <p className="mt-4 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
-              And we provide this as a service, not siloed sales and
-              marketing teams, a blend of sales, marketing, business
-              development, and account management that works for and with
-              your business, while you get on with the business of building
-              a great product.
-            </p>
-          </div>
-          <div>
+            <h3 className="font-display mb-5 text-[22px] font-semibold">
+              What we do
+            </h3>
             <ul className="space-y-5">
-              {REVENUE_AS_A_SERVICE.map((item) => (
+              {WHAT_WE_DO.map((item) => (
                 <li key={item.label} className="border-t-[3px] border-blue pt-4">
                   <p className="text-lg leading-[1.7] text-[#42465c]">
                     <strong className="font-display font-bold text-navy">
@@ -200,11 +208,29 @@ export default function GrowthPage() {
                 </li>
               ))}
             </ul>
-            <Link href="/contact" className={`${ctaOutline} mt-8`}>
-              Get in touch — find out more
-            </Link>
+          </div>
+          <div>
+            <h3 className="font-display mb-5 text-[22px] font-semibold">
+              How we work
+            </h3>
+            <ul className="space-y-5">
+              {HOW_WE_WORK.map((item) => (
+                <li key={item.label} className="border-t-[3px] border-orange pt-4">
+                  <p className="text-lg leading-[1.7] text-[#42465c]">
+                    <strong className="font-display font-bold text-navy">
+                      {item.label}
+                    </strong>{" "}
+                    — {item.body}
+                  </p>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
+
+        <Link href="/contact" className={`${ctaOutline} mt-10`}>
+          Get in touch — find out more
+        </Link>
       </section>
 
       {/* The Velocity Sprint */}
