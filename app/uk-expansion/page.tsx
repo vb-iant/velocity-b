@@ -49,7 +49,7 @@ const CHALLENGES = [
   },
 ];
 
-const SERVICE_COL_1 = [
+const WHAT_WE_DO = [
   {
     label: "Fractional in-market representation",
     body: "working as you, with your voice, values, and proposition properly embedded in the UK market, not represented from a distance.",
@@ -59,19 +59,23 @@ const SERVICE_COL_1 = [
     body: "sales leadership, local onshore business development, account management, customer success, creative, and field marketing, all in one place.",
   },
   {
-    label: "Shared performance goals",
-    body: "our fee structure mixes retainer and performance, so we've got real skin in the game alongside you, not just an invoice to send.",
+    label: "Back-office support",
+    body: "trusted local accountants and legal partners who handle the admin of setting up and staying compliant in the UK, so you don't have to learn it from scratch.",
   },
 ];
 
-const SERVICE_COL_2 = [
+const HOW_WE_DO_IT = [
   {
-    label: "Flexible, agile delivery",
-    body: "a fast, tailored onboarding process to start, then we scale the service up or down as you actually need it.",
+    label: "Shared performance goals",
+    body: "our fee structure mixes retainer and performance, so we've got real skin in the game alongside you, not just an invoice to send.",
   },
   {
-    label: "Back-office support",
-    body: "trusted local accountants and legal partners who handle the admin of setting up and staying compliant in the UK, so you don't have to learn it from scratch.",
+    label: "Flexible, agile delivery",
+    body: "a fast, tailored onboarding sprint to start, then we scale the service up or down as you actually need it.",
+  },
+  {
+    label: "Our 3 E's approach",
+    body: "we have a light process, where we Evaluate, Engage and Execute to quickly add value.",
   },
 ];
 
@@ -284,30 +288,40 @@ export default function UkExpansionPage() {
           We become your UK team, in practice as much as in name:
         </p>
         <div className="mt-8 grid grid-cols-1 gap-x-10 md:grid-cols-2">
-          <ul className="space-y-5">
-            {SERVICE_COL_1.map((item) => (
-              <li key={item.label} className="border-t-[3px] border-blue pt-4">
-                <p className="text-lg leading-[1.7] text-[#42465c]">
-                  <strong className="font-display font-bold text-navy">
-                    {item.label}
-                  </strong>{" "}
-                  — {item.body}
-                </p>
-              </li>
-            ))}
-          </ul>
-          <ul className="mt-5 space-y-5 md:mt-0">
-            {SERVICE_COL_2.map((item) => (
-              <li key={item.label} className="border-t-[3px] border-blue pt-4">
-                <p className="text-lg leading-[1.7] text-[#42465c]">
-                  <strong className="font-display font-bold text-navy">
-                    {item.label}
-                  </strong>{" "}
-                  — {item.body}
-                </p>
-              </li>
-            ))}
-          </ul>
+          <div>
+            <span className="font-display block text-[11px] font-extrabold tracking-[0.08em] text-blue">
+              WHAT WE DO
+            </span>
+            <ul className="mt-4 space-y-5">
+              {WHAT_WE_DO.map((item) => (
+                <li key={item.label} className="border-t-[3px] border-blue pt-4">
+                  <p className="text-lg leading-[1.7] text-[#42465c]">
+                    <strong className="font-display font-bold text-navy">
+                      {item.label}
+                    </strong>{" "}
+                    — {item.body}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-8 md:mt-0">
+            <span className="font-display block text-[11px] font-extrabold tracking-[0.08em] text-orange">
+              HOW WE DO IT
+            </span>
+            <ul className="mt-4 space-y-5">
+              {HOW_WE_DO_IT.map((item) => (
+                <li key={item.label} className="border-t-[3px] border-orange pt-4">
+                  <p className="text-lg leading-[1.7] text-[#42465c]">
+                    <strong className="font-display font-bold text-navy">
+                      {item.label}
+                    </strong>{" "}
+                    — {item.body}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -318,11 +332,15 @@ export default function UkExpansionPage() {
           Get Started with a Velocity Sprint
         </h2>
         <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
-          Reduce the risk, skip months of trial and error entering the UK,
-          with the <strong className="text-navy">8-Week Velocity Sprint</strong>{" "}
-          which gives you an instant read, with a tailored go-to-market
-          playbook for the UK, and live multi-channel execution that will
-          test the market.
+          This <strong className="text-navy">8-Week Velocity Sprint</strong>{" "}
+          gives you a complete revenue audit, a tailored go-to-market
+          playbook, optimized infrastructure, and live multi-channel
+          execution. Meaning you can skip months of trial and error,
+          redundant MarTech costs, and disconnected sales and marketing
+          teams.
+        </p>
+        <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
+          The sprint is tailored to your needs and can include:
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-2">
