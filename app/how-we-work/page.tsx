@@ -39,8 +39,8 @@ const IMPLEMENT_SERVICES = [
     color: "border-blue text-blue",
   },
   {
-    title: "Localised content marketing",
-    body: "Messaging and content built for a specific market, not translated after the fact.",
+    title: "Content Marketing",
+    body: 'Not just "random acts of content", but compelling content built for your market and buyer, executed against an engagement strategy.',
     color: "border-orange text-orange",
   },
 ];
