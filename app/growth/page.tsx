@@ -213,12 +213,15 @@ export default function GrowthPage() {
           <AnimatedChevron className="text-blue" />Start with a Velocity Sprint
         </h2>
         <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
-          Skip months of trial and error, redundant MarTech costs, and
-          disconnected sales and marketing teams. The{" "}
-          <strong className="text-navy">8-Week Velocity Sprint</strong> gives
-          you a complete revenue audit, a tailored go-to-market playbook,
-          optimized infrastructure, and live multi-channel execution.{" "}
-          <strong className="text-navy">Built to deliver fast results, you get:</strong>
+          This <strong className="text-navy">8-Week Velocity Sprint</strong>{" "}
+          gives you a complete revenue audit, a tailored go-to-market
+          playbook, optimized infrastructure, and live multi-channel
+          execution. Meaning you can skip months of trial and error,
+          redundant MarTech costs, and disconnected sales and marketing
+          teams.
+        </p>
+        <p className="mt-4 max-w-[860px] text-lg leading-[1.7] text-[#42465c]">
+          The sprint is tailored to your needs and can include:
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-2">
