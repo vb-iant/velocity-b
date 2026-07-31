@@ -5,6 +5,7 @@ export const metadata = {
   title: "Our Work — Velocity-B",
 };
 
+const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
 const ctaAccent = "inline-block bg-orange px-[30px] py-4 text-[15px] font-bold text-navy";
 
 const colorClasses = {
@@ -45,11 +46,20 @@ const CASE_STUDIES = [
     body: "Connex One, a fast-growing international contact-centre software provider, brought us in as fractional CMO following investment. We built the marketing function from scratch, hired the team, chose and implemented a new CRM, and launched a new website and message — all of which fed into revenue growth and a successful Series C round.",
   },
   {
-    title: "More projects",
-    client: "A handful without a full case study yet",
+    title: "A great product, needing a great story",
+    client: "iManage",
     color: "navy" as const,
-    body: "A marketing strategy and planning engagement for a UK tech services reseller in a crowded market, support for the international launch of a DAM product following an acquisition, positioning and messaging for a DAM services consultancy, digital asset management AI/ML technology advisory for a start-up, an influencer marketing programme for a Forrester/Gartner-recognised vendor, and content strategy, planning and execution for an international software business.",
+    body: "This established legaltech vendor was looking for a fresh story to tell, and, working with their agency of record, we developed the creative brand ideas, turned them into a coherent story, executed it with a cohesive multi-channel strategy, and built a content marketing team from scratch along the way.",
   },
+];
+
+const OTHER_PROJECTS = [
+  "A marketing strategy and planning engagement for a UK tech services reseller",
+  "Support for the international launch of a DAM product following an acquisition",
+  "Positioning and messaging for a DAM services consultancy",
+  "Digital Asset Management AI/ML technology advisory for a start-up",
+  "An influencer marketing programme for a Forrester/Gartner-recognised vendor",
+  "1:1 mentoring and coaching of almost a dozen sales and marketing professionals",
 ];
 
 export default function OurWorkPage() {
@@ -57,16 +67,27 @@ export default function OurWorkPage() {
     <main>
       {/* Hero */}
       <section className="mx-auto max-w-[1180px] px-12 py-20">
-        <h1 className="font-display max-w-[900px] text-[42px] font-bold leading-[1.06] tracking-tight md:text-[56px]">
-          <AnimatedChevron className="text-blue" />
-          Real results, from people who&rsquo;ll actually vouch for us.
-        </h1>
-        <p className="mt-6 max-w-[660px] text-lg leading-[1.7] text-[#42465c]">
-          Not our first rodeo. If there&rsquo;s one thing we&rsquo;d want you
-          to take from this page, it&rsquo;s experience — this is a time for
-          innovation, sure, but there&rsquo;s no need to risk the business
-          finding that out the hard way. Trust us, we&rsquo;ve been there.
-        </p>
+        <div className="grid grid-cols-1 items-start gap-14 md:grid-cols-2">
+          <div>
+            <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
+              <AnimatedChevron className="text-blue" />Not our first rodeo.
+            </h1>
+            <h2 className="font-display mt-2 text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
+              Ask any of these guys.
+            </h2>
+          </div>
+          <div>
+            <p className="max-w-[520px] text-lg leading-[1.7] text-[#42465c]">
+              If there&rsquo;s one thing we&rsquo;d want you to take from this
+              page, it&rsquo;s experience — this is a time for innovation,
+              sure, but there&rsquo;s no need to risk the business finding
+              that out the hard way. Trust us, we&rsquo;ve been there.
+            </p>
+            <Link href="/contact" className={`${ctaSolid} mt-7`}>
+              Let&rsquo;s chat
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Case studies */}
@@ -88,6 +109,20 @@ export default function OurWorkPage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Other projects */}
+      <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
+        <div className="border-t-[6px] border-blue pt-6">
+          <h3 className="font-display text-[22px] font-semibold">
+            Other projects have included
+          </h3>
+          <ul className="mt-3 max-w-[860px] list-disc space-y-2 pl-5 text-lg leading-[1.7] text-[#42465c]">
+            {OTHER_PROJECTS.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </section>
 
