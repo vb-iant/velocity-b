@@ -56,26 +56,26 @@ const WHAT_WE_DO = [
   },
   {
     label: "A full-service satellite team",
-    body: "sales leadership, local onshore business development, account management, customer success, creative, and field marketing, all in one place.",
+    body: "sales leadership, local business development, account management, customer success, creative, and field marketing, all in one place.",
   },
   {
     label: "Back-office support",
-    body: "trusted local accountants and legal partners who handle the admin of setting up and staying compliant in the UK, so you don't have to learn it from scratch.",
+    body: "trusted local accountants and legal partners handle the admin of UK compliance, so you don't have to learn it from scratch.",
   },
 ];
 
 const HOW_WE_DO_IT = [
   {
     label: "Shared performance goals",
-    body: "our fee structure mixes retainer and performance, so we've got real skin in the game alongside you, not just an invoice to send.",
+    body: "our fee structure blends retainer and performance, so we've got real skin in the game, not just an invoice to send.",
   },
   {
     label: "Flexible, agile delivery",
-    body: "a fast, tailored onboarding sprint to start, then we scale the service up or down as you actually need it.",
+    body: "a fast, tailored onboarding sprint to start, then we scale the service up or down as you need it.",
   },
   {
     label: "Our 3 E's approach",
-    body: "we have a light process, where we Evaluate, Engage and Execute to quickly add value.",
+    body: "we keep the process light — Evaluate, Engage, and Execute — so we can quickly identify what matters and start adding value fast.",
   },
 ];
 
