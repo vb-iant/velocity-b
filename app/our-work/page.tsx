@@ -6,6 +6,8 @@ export const metadata = {
 };
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
+const ctaOutline =
+  "inline-block border-2 border-navy px-[30px] py-4 text-[15px] font-bold text-navy";
 const ctaAccent = "inline-block bg-orange px-[30px] py-4 text-[15px] font-bold text-navy";
 
 const colorClasses = {
@@ -133,6 +135,9 @@ export default function OurWorkPage() {
               </ul>
             ))}
           </div>
+          <Link href="/contact" className={`${ctaOutline} mt-9`}>
+            Get in touch to learn more
+          </Link>
         </div>
       </section>
 
