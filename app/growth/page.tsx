@@ -80,7 +80,7 @@ const SPRINT_PHASES = [
     items: [
       {
         title: "MarTech Audit",
-        body: "Rationalize your tech stack, cut redundant software costs, and set up modern sales infrastructure.",
+        body: "Rationalize your stack, cut costs, and modernize your revenue platform.",
       },
       {
         title: "ICP & Positioning",
