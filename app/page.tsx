@@ -209,9 +209,9 @@ export default function Home() {
             </a>
             <h3 className="font-display mt-4 text-[22px] font-semibold">Ian Truscott</h3>
             <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
-              Founder of Velocity B, based on a background in tech and
-              product development, Ian is an experienced marketing leader,
-              4x CMO, writer, and trusted advisor.
+              Founder of Velocity B. A reformed techie with a background in
+              product development, Ian is an experienced marketing leader, a
+              4x B2B CMO, former analyst, and trusted advisor.
             </p>
             <p className="mt-6 text-lg italic leading-[1.6] text-navy">
               &ldquo;I recommend anyone looking for a voice of reason in the
