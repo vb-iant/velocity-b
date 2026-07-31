@@ -107,6 +107,9 @@ export default function AboutPage() {
           probably won&rsquo;t recognise, and we&rsquo;ve helped plenty of
           sales and marketing teams get where they were trying to go.
         </p>
+        <Link href="/our-work" className={`${ctaOutline} mt-8`}>
+          See Our Work
+        </Link>
       </section>
 
       {/* Why Velocity B */}
