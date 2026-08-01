@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Velocity Assessment: printing the results screen (via window.print()) should
+   hide site chrome and any assessment steps other than the results block. */
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+}
