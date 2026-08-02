@@ -21,16 +21,37 @@ const GUIDES = [
     title: "Sales Playbook Template",
     body: "A proven template for building clarity, consistency, and speed into your sales process, drawn from years of doing this rather than reading about it.",
     href: "/resources/sales-playbook-template.pdf",
+    inside: [
+      "ICP, buyer personas, and qualification criteria (BANT/CHAMP) in one place",
+      "A defined pipeline: stages, exit criteria, and forecasting",
+      "Prospect meeting and demo playbooks, from prep to follow-up",
+      "Objection handling, discounting rules, and negotiation guidance",
+      "Post-sale onboarding, renewal, and advocacy process",
+    ],
   },
   {
     title: "B2B Tech Growth Guide",
     body: "Tired of growth hacks and hustle-porn shortcuts? A practical walk through six real GTM disciplines across sales and marketing.",
     href: "/resources/b2b-tech-growth-guide.pdf",
+    inside: [
+      "How to define a sharp ICP and real buyer clarity",
+      "Choosing your category position: align, reframe, or create",
+      "Sizing genuine demand, not wishful-thinking TAM",
+      "Building a Minimum Viable GTM Engine (people, process, tech)",
+      "Content and metrics that actually drive revenue, not vanity numbers",
+    ],
   },
   {
     title: "The Series B Marketing Playbook",
     body: "What investors are actually looking for, and how marketing can lead on turning growth into an investable story.",
     href: "/resources/series-b-marketing-playbook.pdf",
+    inside: [
+      "What investors actually look for: category clarity, credibility, traction",
+      "The three pillars: Narrative, Execution, Proof",
+      "Avoiding the \"differentiated, not different\" positioning trap",
+      "Building a repeatable demand engine investors trust",
+      "Turning customer stories into a scalable, shareable growth asset",
+    ],
   },
 ];
 
@@ -68,26 +89,48 @@ export default function ResourcesPage() {
           <AnimatedChevron className="text-blue" />
           Guides
         </h2>
-        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3">
+        <div className="mt-10 flex flex-col">
           {GUIDES.map((guide, i) => (
             <div
               key={guide.title}
-              className={`flex flex-col border-t-[6px] ${BORDER_COLORS[i % 3]} pt-6`}
+              className={`grid grid-cols-1 gap-8 border-t-[6px] ${BORDER_COLORS[i % 3]} py-9 md:grid-cols-[1.1fr_1fr_auto] md:items-start md:gap-12`}
             >
-              <h3 className="font-display text-[22px] font-semibold">
-                {guide.title}
-              </h3>
-              <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
-                {guide.body}
-              </p>
-              <a
-                href={guide.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${ctaOutline} mt-6 self-start`}
-              >
-                Read It Now
-              </a>
+              <div>
+                <h3 className="font-display text-[22px] font-semibold">
+                  {guide.title}
+                </h3>
+                <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
+                  {guide.body}
+                </p>
+              </div>
+
+              <div>
+                <div className="font-display text-[13px] font-bold uppercase tracking-wider text-[#9096a8]">
+                  What&rsquo;s inside?
+                </div>
+                <ul className="mt-3 space-y-2">
+                  {guide.inside.map((item) => (
+                    <li
+                      key={item}
+                      className="flex gap-2.5 text-base leading-[1.6] text-[#42465c]"
+                    >
+                      <span className="mt-[3px] text-blue">&gt;</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="md:pt-1">
+                <a
+                  href={guide.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${ctaOutline} whitespace-nowrap`}
+                >
+                  Read It Now
+                </a>
+              </div>
             </div>
           ))}
         </div>
