@@ -93,15 +93,23 @@ export default function ResourcesPage() {
           {GUIDES.map((guide, i) => (
             <div
               key={guide.title}
-              className={`grid grid-cols-1 gap-8 border-t-[6px] ${BORDER_COLORS[i % 3]} py-9 md:grid-cols-[1.1fr_1fr_auto] md:items-start md:gap-12`}
+              className={`grid grid-cols-1 gap-8 border-t-[6px] ${BORDER_COLORS[i % 3]} py-9 md:grid-cols-2 md:items-start md:gap-16`}
             >
-              <div>
+              <div className="flex flex-col items-start">
                 <h3 className="font-display text-[22px] font-semibold">
                   {guide.title}
                 </h3>
                 <p className="mt-2 text-lg leading-[1.7] text-[#42465c]">
                   {guide.body}
                 </p>
+                <a
+                  href={guide.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${ctaOutline} mt-6`}
+                >
+                  Read It Now
+                </a>
               </div>
 
               <div>
@@ -119,17 +127,6 @@ export default function ResourcesPage() {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div className="md:pt-1">
-                <a
-                  href={guide.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${ctaOutline} whitespace-nowrap`}
-                >
-                  Read It Now
-                </a>
               </div>
             </div>
           ))}
