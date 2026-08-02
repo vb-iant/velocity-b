@@ -140,8 +140,15 @@ export function VelocityAssessment() {
   const [submitting, setSubmitting] = useState(false);
 
   const topRef = useRef<HTMLDivElement>(null);
+  const hasMounted = useRef(false);
 
   useEffect(() => {
+    // Skip the very first run (page load, still on the intro screen) — only
+    // scroll once the person has actually moved somewhere.
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
     topRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [step, screenIndex]);
 
@@ -213,6 +220,14 @@ export function VelocityAssessment() {
     }
   }
 
+  function goBack() {
+    if (screenIndex > 0) {
+      setScreenIndex(screenIndex - 1);
+    } else {
+      setStep("intro");
+    }
+  }
+
   const totalScreens = SCREENS.length;
   const progressPct = step === "screen" ? ((screenIndex + 1) / totalScreens) * 100 : 0;
 
@@ -244,10 +259,17 @@ export function VelocityAssessment() {
 
       <div ref={topRef} className="mx-auto max-w-[1180px] px-12 pb-24">
         {step === "screen" && (
-          <div className="mb-10 mt-10">
+          <div className="mb-8 mt-10">
             <div className="h-[3px] w-full bg-hair">
               <div className="h-[3px] bg-blue transition-all" style={{ width: `${progressPct}%` }} />
             </div>
+            <button
+              type="button"
+              onClick={goBack}
+              className="mt-6 text-sm font-semibold text-[#42465c] hover:text-navy"
+            >
+              &larr; Back
+            </button>
           </div>
         )}
 
