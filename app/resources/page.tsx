@@ -135,7 +135,7 @@ export default function ResourcesPage() {
 
       {/* Velocity Assessment */}
       <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
-        <div className="flex flex-col items-start gap-10 bg-blue px-10 py-14 md:flex-row md:items-center md:px-14">
+        <div className="flex flex-col items-start justify-between gap-10 bg-blue px-10 py-14 md:flex-row md:items-center md:px-14">
           <div>
             <h2 className="font-display text-[32px] font-bold leading-tight tracking-tight text-white md:text-[40px]">
               <AnimatedChevron className="text-white" />
@@ -153,6 +153,43 @@ export default function ResourcesPage() {
               Take the Assessment
             </Link>
           </div>
+
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 160 100"
+            className="hidden h-[110px] w-[176px] flex-none md:block"
+          >
+            {/* Track */}
+            <path
+              d="M15,90 A65,65 0 0 1 145,90"
+              fill="none"
+              stroke="rgba(255,255,255,0.28)"
+              strokeWidth="12"
+              strokeLinecap="round"
+            />
+            {/* Progress arc */}
+            <path
+              d="M15,90 A65,65 0 0 1 145,90"
+              fill="none"
+              stroke="#FFFFFF"
+              strokeWidth="12"
+              strokeLinecap="round"
+              strokeDasharray="204 204"
+              strokeDashoffset="62"
+            />
+            {/* Needle */}
+            <line
+              x1="80"
+              y1="90"
+              x2="80"
+              y2="32"
+              stroke="#FF8A3D"
+              strokeWidth="4"
+              strokeLinecap="round"
+              transform="rotate(38 80 90)"
+            />
+            <circle cx="80" cy="90" r="8" fill="#FFFFFF" />
+          </svg>
         </div>
       </section>
 
