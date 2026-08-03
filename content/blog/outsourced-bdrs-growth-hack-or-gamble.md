@@ -3,7 +3,7 @@ title: "Outsourced BDRs: Growth Hack or Gamble?"
 slug: "outsourced-bdrs-growth-hack-or-gamble"
 date: "2025-11-12"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Alex has built many BDR teams over his career - in this post, he answers the critical \"build or buy\" question."
 originalUrl: "https://velocity-b.com/blog/outsourced-bdrs-growth-hack-or-gamble"
 ---

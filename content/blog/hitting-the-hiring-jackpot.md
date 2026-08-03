@@ -3,7 +3,7 @@ title: "Hitting The Hiring Jackpot"
 slug: "hitting-the-hiring-jackpot"
 date: "2025-06-16"
 author: "alex-simonson"
-tags: ["revenue"]
+tags: ["revenue-growth"]
 excerpt: "Hitting The Hiring Jackpot"
 originalUrl: "https://velocity-b.com/blog/hitting-the-hiring-jackpot"
 ---

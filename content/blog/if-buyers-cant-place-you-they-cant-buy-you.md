@@ -3,7 +3,7 @@ title: "If Buyers Can’t Place You, They Can’t Buy You"
 slug: "if-buyers-cant-place-you-they-cant-buy-you"
 date: "2025-12-05"
 author: "ian"
-tags: ["the-art-of-sales", "discovery"]
+tags: ["sales-execution"]
 excerpt: "Being distinct is critical, but being unique in a market of one comes with risks, as Ian explains."
 originalUrl: "https://velocity-b.com/blog/if-buyers-cant-place-you-they-cant-buy-you"
 ---

@@ -3,7 +3,7 @@ title: "Your Website is Not About Your Product"
 slug: "your-website-is-not-about-your-product"
 date: "2026-01-15"
 author: "ian"
-tags: ["the-digital-experience"]
+tags: ["marketing"]
 excerpt: "In this post, Ian reviews 25 B2B tech websites and shares what was broken."
 originalUrl: "https://velocity-b.com/blog/your-website-is-not-about-your-product"
 ---

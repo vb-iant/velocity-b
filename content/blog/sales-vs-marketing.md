@@ -3,7 +3,7 @@ title: "Sales Vs Marketing"
 slug: "sales-vs-marketing"
 date: "2025-12-15"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Growth doesn’t come from winning internal arguments - it comes from winning customers. Alex suggests how sales and marketing need to work together to achieve the most important goal."
 originalUrl: "https://velocity-b.com/blog/sales-vs-marketing"
 ---

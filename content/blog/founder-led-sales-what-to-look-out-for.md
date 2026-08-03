@@ -3,7 +3,7 @@ title: "Why Founders Make the Best (and Worst) Salespeople"
 slug: "founder-led-sales-what-to-look-out-for"
 date: "2025-10-17"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Alex explores sales for early-stage companies, sharing the pitfalls and when founders need to hire."
 originalUrl: "https://velocity-b.com/blog/founder-led-sales-what-to-look-out-for"
 ---

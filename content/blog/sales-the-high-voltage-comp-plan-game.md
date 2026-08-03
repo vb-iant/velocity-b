@@ -3,7 +3,7 @@ title: "The High-Voltage Comp Plan Game"
 slug: "sales-the-high-voltage-comp-plan-game"
 date: "2025-07-17"
 author: "alex-simonson"
-tags: ["revenue"]
+tags: ["revenue-growth"]
 excerpt: "Alex touches the third rail of creating comp plans"
 originalUrl: "https://velocity-b.com/blog/sales-the-high-voltage-comp-plan-game"
 ---

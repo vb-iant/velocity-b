@@ -3,7 +3,7 @@ title: "Revenue Velocity: What's Holding You Back?"
 slug: "revenue-velocity-whats-holding-you-back"
 date: "2026-02-05"
 author: "ian"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Sales and marketing activity isn't a guarantee that we’ll hit our revenue targets. When revenue stalls, the problem is rarely effort or tools; it’s misalignment within what we call the Revenue Department. This article explains why reviewing sales and marketing together, through a single revenue lens, is often the fastest way to unlock sales velocity."
 originalUrl: "https://velocity-b.com/blog/revenue-velocity-whats-holding-you-back"
 ---

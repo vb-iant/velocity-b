@@ -3,7 +3,7 @@ title: "Hiring for Investment"
 slug: "hiring-for-investment"
 date: "2026-05-06"
 author: "alex-simonson"
-tags: ["to-series-b"]
+tags: ["growth-scaling"]
 excerpt: "As part of our \"To Series B\" article series, Alex takes a look at the critical hiring decisions growing companies need to make to prepare for the next investment step."
 originalUrl: "https://velocity-b.com/blog/hiring-for-investment"
 ---

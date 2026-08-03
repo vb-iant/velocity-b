@@ -3,7 +3,7 @@ title: "What's Your Product Being Hired To Do?"
 slug: "whats-your-product-being-hired-to-do"
 date: "2025-10-29"
 author: "ian"
-tags: ["content-marketing"]
+tags: ["marketing"]
 excerpt: "Does your website answer the basic question about your products—what job do they solve?"
 originalUrl: "https://velocity-b.com/blog/whats-your-product-being-hired-to-do"
 ---

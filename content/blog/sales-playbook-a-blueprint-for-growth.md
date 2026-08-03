@@ -3,7 +3,7 @@ title: "Sales Playbook: Building a Blueprint for Growth"
 slug: "sales-playbook-a-blueprint-for-growth"
 date: "2025-11-05"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Alex dives into the importance of having a sales playbook, your blueprint for growth."
 originalUrl: "https://velocity-b.com/blog/sales-playbook-a-blueprint-for-growth"
 ---

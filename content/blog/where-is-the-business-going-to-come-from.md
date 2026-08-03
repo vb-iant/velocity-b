@@ -3,7 +3,7 @@ title: "Where is the Business Going to Come From?"
 slug: "where-is-the-business-going-to-come-from"
 date: "2025-09-10"
 author: "alex-simonson"
-tags: ["revenue"]
+tags: ["revenue-growth"]
 excerpt: "In this post Alex tackles the big sales question - where will we get the business?"
 originalUrl: "https://velocity-b.com/blog/where-is-the-business-going-to-come-from"
 ---

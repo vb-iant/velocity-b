@@ -1,67 +1,32 @@
 [
   {
-    "id": "240161548530",
-    "name": "About us",
-    "slug": "about-us"
+    "id": "600000000001",
+    "name": "Sales Execution",
+    "slug": "sales-execution"
   },
   {
-    "id": "255110051043",
-    "name": "Revenue",
-    "slug": "revenue"
+    "id": "600000000002",
+    "name": "Revenue Growth",
+    "slug": "revenue-growth"
   },
   {
-    "id": "258167282899",
-    "name": "Opinion",
-    "slug": "opinion"
+    "id": "600000000003",
+    "name": "Growth & Scaling",
+    "slug": "growth-scaling"
   },
   {
-    "id": "274236701912",
-    "name": "Awareness",
-    "slug": "awareness"
+    "id": "600000000004",
+    "name": "Marketing",
+    "slug": "marketing"
   },
   {
-    "id": "274236701920",
-    "name": "Trust",
-    "slug": "trust"
+    "id": "600000000005",
+    "name": "Strategy & Opinion",
+    "slug": "strategy-opinion"
   },
   {
-    "id": "279874084030",
-    "name": "Content Marketing",
-    "slug": "content-marketing"
-  },
-  {
-    "id": "282131109059",
-    "name": "The ART of Sales",
-    "slug": "the-art-of-sales"
-  },
-  {
-    "id": "316979898612",
-    "name": "Discovery",
-    "slug": "discovery"
-  },
-  {
-    "id": "345493789912",
-    "name": "The Digital Experience",
-    "slug": "the-digital-experience"
-  },
-  {
-    "id": "369789999309",
-    "name": "Corporate Strategy",
-    "slug": "corporate-strategy"
-  },
-  {
-    "id": "369790427331",
-    "name": "Marketing Technology",
-    "slug": "marketing-technology"
-  },
-  {
-    "id": "389967928540",
-    "name": "To Series B",
-    "slug": "to-series-b"
-  },
-  {
-    "id": "417694370021",
-    "name": "UK-as-a-Service",
-    "slug": "uk-as-a-service"
+    "id": "600000000006",
+    "name": "Company",
+    "slug": "company"
   }
 ]

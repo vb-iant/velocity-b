@@ -3,7 +3,7 @@ title: "Will Your Plan Survive A Punch in the Face?"
 slug: "will-your-plan-survive-a-punch-in-the-face"
 date: "2026-03-27"
 author: "mark-rattley"
-tags: ["corporate-strategy"]
+tags: ["strategy-opinion"]
 excerpt: "In this article, Mark doesn’t get punchy, but he does land a quick 1-2 of great advice for business planning."
 originalUrl: "https://velocity-b.com/blog/will-your-plan-survive-a-punch-in-the-face"
 ---

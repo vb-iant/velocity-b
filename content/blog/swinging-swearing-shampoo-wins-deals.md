@@ -3,7 +3,7 @@ title: "Swinging, Swearing & Shampoo Wins Deals"
 slug: "swinging-swearing-shampoo-wins-deals"
 date: "2025-10-02"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Deals on the golf course is a cliché, but the Ryder Cup inspires Alex to share what really makes a sale."
 originalUrl: "https://velocity-b.com/blog/swinging-swearing-shampoo-wins-deals"
 ---

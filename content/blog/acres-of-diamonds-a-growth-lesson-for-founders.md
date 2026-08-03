@@ -3,7 +3,7 @@ title: "Acres of Diamonds: A Growth Lesson for Founders"
 slug: "acres-of-diamonds-a-growth-lesson-for-founders"
 date: "2026-04-22"
 author: "mark-rattley"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "In this article, Mark draws inspiration from a 19th-century essay to offer a growth lesson: Your opportunity for revenue might be closer to home than you think."
 originalUrl: "https://velocity-b.com/blog/acres-of-diamonds-a-growth-lesson-for-founders"
 ---

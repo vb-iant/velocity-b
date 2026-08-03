@@ -3,7 +3,7 @@ title: "5 Steps to Shorten Your Sales Cycle"
 slug: "5-steps-to-shorten-your-sales-cycle"
 date: "2026-02-04"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Alex shares 5 proven tips to shorten sales cycles."
 originalUrl: "https://velocity-b.com/blog/5-steps-to-shorten-your-sales-cycle"
 ---

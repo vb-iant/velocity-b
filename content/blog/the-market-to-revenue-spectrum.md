@@ -3,7 +3,7 @@ title: "The Market-to-Revenue Spectrum"
 slug: "the-market-to-revenue-spectrum"
 date: "2025-11-20"
 author: "ian"
-tags: ["awareness", "the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Ian explores the spectrum of demand,  identifying 7 types we should consider when market sizing."
 originalUrl: "https://velocity-b.com/blog/the-market-to-revenue-spectrum"
 ---

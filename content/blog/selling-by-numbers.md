@@ -3,7 +3,7 @@ title: "Selling by Numbers"
 slug: "selling-by-numbers"
 date: "2025-08-14"
 author: "alex-simonson"
-tags: ["revenue"]
+tags: ["revenue-growth"]
 excerpt: "Alex breaks down the numbers game that is critical to high-performing sales teams."
 originalUrl: "https://velocity-b.com/blog/selling-by-numbers"
 ---

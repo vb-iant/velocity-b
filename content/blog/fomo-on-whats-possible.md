@@ -3,7 +3,7 @@ title: "Got FOMO on What's Possible?"
 slug: "fomo-on-whats-possible"
 date: "2025-05-27"
 author: "ian"
-tags: ["opinion"]
+tags: ["strategy-opinion"]
 excerpt: "If your LinkedIn feed and email inbox is overflowing with growth hacks and snake oil advice, Ian has some advice..."
 originalUrl: "https://velocity-b.com/blog/fomo-on-whats-possible"
 ---

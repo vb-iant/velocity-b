@@ -3,7 +3,7 @@ title: "The Risks of Unintended Consequences"
 slug: "the-risks-of-unintended-consequences"
 date: "2026-05-28"
 author: "mark-rattley"
-tags: ["corporate-strategy"]
+tags: ["strategy-opinion"]
 excerpt: "When you are growing a business, it feels like decisions need to be made fast, but some might come with costs further down the road, as Mark explains."
 originalUrl: "https://velocity-b.com/blog/the-risks-of-unintended-consequences"
 ---

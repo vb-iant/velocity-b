@@ -3,7 +3,7 @@ title: "Is AI Really Your Biggest Challenge in 2026?"
 slug: "is-ai-really-your-biggest-challenge-in-2026"
 date: "2026-03-05"
 author: "mark-rattley"
-tags: ["corporate-strategy"]
+tags: ["strategy-opinion"]
 excerpt: "How B2B Tech SMEs leverage new AI technologies seems to be taking all the oxygen out of the room in discussions about strategy. In this article, Mark Rattley explores its importance, but shares what’s really keeping founders and leaders up at night."
 originalUrl: "https://velocity-b.com/blog/is-ai-really-your-biggest-challenge-in-2026"
 ---

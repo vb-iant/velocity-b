@@ -3,7 +3,7 @@ title: "Great Sellers Make Buying Easier"
 slug: "great-sellers-make-buying-easier"
 date: "2026-02-11"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Prevent the dreaded \"do nothing\" by helping the buyer buy - Alex shares 5 helpful tips."
 originalUrl: "https://velocity-b.com/blog/great-sellers-make-buying-easier"
 ---

@@ -3,7 +3,7 @@ title: "Selling Change"
 slug: "selling-change"
 date: "2025-08-28"
 author: "ian"
-tags: ["revenue", "trust"]
+tags: ["revenue-growth"]
 excerpt: "Before your buyer is ready to buy, they need to be prepared for change, as Ian shares."
 originalUrl: "https://velocity-b.com/blog/selling-change"
 ---

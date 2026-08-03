@@ -3,7 +3,7 @@ title: "The ART of Winning Beyond the 5%"
 slug: "the-art-of-winning-beyond-the-5"
 date: "2025-10-13"
 author: "ian"
-tags: ["content-marketing"]
+tags: ["marketing"]
 excerpt: "Research shows that the odds of your B2B buyer being in market today are very slim. In this article, Ian shares how to change those odds."
 originalUrl: "https://velocity-b.com/blog/the-art-of-winning-beyond-the-5"
 ---

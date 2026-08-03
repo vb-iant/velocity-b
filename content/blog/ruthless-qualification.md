@@ -3,7 +3,7 @@ title: "5 Tips for Ruthless Qualification"
 slug: "ruthless-qualification"
 date: "2026-01-15"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "In this post Alex shares the superpower of great sellers: Ruthless Qualification"
 originalUrl: "https://velocity-b.com/blog/ruthless-qualification"
 ---

@@ -3,7 +3,7 @@ title: "Sales Enablement - A Revenue System, not a Training Day"
 slug: "sales-enablement-a-revenue-system-not-a-training-day"
 date: "2026-03-11"
 author: "alex-simonson"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "Alex goves 5 quick tips on creating a sales enablement function"
 originalUrl: "https://velocity-b.com/blog/sales-enablement-a-revenue-system-not-a-training-day"
 ---

@@ -3,7 +3,7 @@ title: "The Ultimate Test of Scaling SaaS Pricing"
 slug: "the-ultimate-test-of-scaling-saas-pricing"
 date: "2025-11-25"
 author: "alex-simonson"
-tags: ["revenue"]
+tags: ["revenue-growth"]
 excerpt: "Traumatised by the cricket, Alex finds parallels between pricing and a dramatic batting collapse."
 originalUrl: "https://velocity-b.com/blog/the-ultimate-test-of-scaling-saas-pricing"
 ---

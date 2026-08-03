@@ -3,7 +3,7 @@ title: "Martech: Clarity Before Capability"
 slug: "martech-clarity-before-capability"
 date: "2026-02-26"
 author: "ian"
-tags: ["marketing-technology"]
+tags: ["marketing"]
 excerpt: "In this post, Ian explores the benefits, risks, and an approach that can unlock the potential of tech to support a well-run Revenue Department."
 originalUrl: "https://velocity-b.com/blog/martech-clarity-before-capability"
 ---

@@ -3,7 +3,7 @@ title: "When the Founder Becomes the Bottleneck"
 slug: "when-the-founder-becomes-the-bottleneck"
 date: "2026-04-29"
 author: "ian"
-tags: ["to-series-b"]
+tags: ["growth-scaling"]
 excerpt: "Entrepreneurs and founders have a unique knack for bringing ideas to life, but sometimes those skills can hold back a growing young company, as Ian explores in this article."
 originalUrl: "https://velocity-b.com/blog/when-the-founder-becomes-the-bottleneck"
 ---

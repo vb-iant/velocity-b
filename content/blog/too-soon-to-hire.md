@@ -3,7 +3,7 @@ title: "Is It Too Soon to Hire a CMO or CRO?"
 slug: "too-soon-to-hire"
 date: "2026-04-09"
 author: "ian"
-tags: ["to-series-b"]
+tags: ["growth-scaling"]
 excerpt: "You've got early customers, a product that works, and investors who want to see more. The next hire could be your smartest move, or an expensive mistake. In this post, Ian explores how growth-stage B2B companies are bridging the gap."
 originalUrl: "https://velocity-b.com/blog/too-soon-to-hire"
 ---

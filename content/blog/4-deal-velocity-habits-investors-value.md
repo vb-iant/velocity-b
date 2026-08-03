@@ -3,7 +3,7 @@ title: "4 Deal Velocity Habits Investors Value"
 slug: "4-deal-velocity-habits-investors-value"
 date: "2026-04-15"
 author: "alex-simonson"
-tags: ["to-series-b"]
+tags: ["growth-scaling"]
 excerpt: "In this article, Alex shares four key things investors look for in a sales team when considering investment beyond Series A, based on his hard-won experience."
 originalUrl: "https://velocity-b.com/blog/4-deal-velocity-habits-investors-value"
 ---

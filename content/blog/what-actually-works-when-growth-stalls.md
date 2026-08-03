@@ -3,7 +3,7 @@ title: "What Actually Works When Growth Stalls?"
 slug: "what-actually-works-when-growth-stalls"
 date: "2026-01-02"
 author: "ian"
-tags: ["the-art-of-sales"]
+tags: ["sales-execution"]
 excerpt: "In this post, Ian suggests six steps to move from hacks and hustle to a go-to-market strategy."
 originalUrl: "https://velocity-b.com/blog/what-actually-works-when-growth-stalls"
 ---

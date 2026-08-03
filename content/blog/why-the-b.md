@@ -3,7 +3,7 @@ title: "Why the B?"
 slug: "why-the-b"
 date: "2025-05-27"
 author: "ian"
-tags: ["about-us"]
+tags: ["company"]
 excerpt: "Why B"
 originalUrl: "https://velocity-b.com/blog/why-the-b"
 ---

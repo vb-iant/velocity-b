@@ -3,7 +3,7 @@ title: "A Helpful Guide to Being Useful"
 slug: "a-guide-to-being-useful"
 date: "2025-09-25"
 author: "ian"
-tags: ["content-marketing"]
+tags: ["marketing"]
 excerpt: "This week in an extended post, Ian shares some ideas on how you can create the best perfoming content marketing by being useful."
 originalUrl: "https://velocity-b.com/blog/a-guide-to-being-useful"
 ---

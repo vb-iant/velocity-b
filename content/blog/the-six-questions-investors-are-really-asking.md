@@ -3,7 +3,7 @@ title: "The Six Questions Investors Are Really Asking"
 slug: "the-six-questions-investors-are-really-asking"
 date: "2026-07-16"
 author: "ian"
-tags: ["to-series-b"]
+tags: ["growth-scaling"]
 excerpt: "Successful investors look beyond the spreadsheets and try to understand the company's true and maybe latent value. Ian shares the questions that the numbers do not answer."
 originalUrl: "https://velocity-b.com/blog/the-six-questions-investors-are-really-asking"
 ---

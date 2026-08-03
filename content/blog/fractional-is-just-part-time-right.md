@@ -3,7 +3,7 @@ title: "Fractional is Just Part-Time - Right?"
 slug: "fractional-is-just-part-time-right"
 date: "2025-07-24"
 author: "ian"
-tags: ["opinion"]
+tags: ["strategy-opinion"]
 excerpt: "Experienced fractional CMO Ian Truscott discusses the differences between a part-time marketing hire and a fractional leader."
 originalUrl: "https://velocity-b.com/blog/fractional-is-just-part-time-right"
 ---
