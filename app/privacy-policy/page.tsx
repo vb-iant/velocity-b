@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
 
         <p className="mt-8 text-lg leading-[1.7] text-[#42465c]">
           This notice describes how Rockstar CMO Ltd &ndash; trading as
-          Velocity-B (&ldquo;we&rdquo; or &ldquo;us&rdquo;) handle the
+          Velocity B (&ldquo;we&rdquo; or &ldquo;us&rdquo;) handle the
           personal information that you may provide us with when
           transacting with us or visiting our website.
         </p>
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
               Contact Details
             </h2>
             <p className="mt-4 text-base leading-[1.7] text-[#42465c]">
-              Velocity-B &ndash; C/O Rockstar CMO Ltd, 49 Greek Street,
+              Velocity B &ndash; C/O Rockstar CMO Ltd, 49 Greek Street,
               London, W1D 4EG or use our{" "}
               <Link href="/contact" className="text-blue underline">
                 contact us form
