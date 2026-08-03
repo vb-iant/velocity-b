@@ -87,7 +87,7 @@ export async function renderOgImage({
           {eyebrow}
         </div>
 
-        <div style={{ display: "flex", alignItems: "flex-end", gap: 26 }}>
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 26 }}>
           <div
             style={{
               display: "flex",
