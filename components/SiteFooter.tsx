@@ -55,8 +55,11 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="mt-10 border-t border-hair pt-6 text-xs text-[#9aa0b5]">
-        © Velocity-B — c/o Rockstar CMO Ltd, 49 Greek St, London W1D 4EG
+      <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-hair pt-6 text-xs text-[#9aa0b5]">
+        <span>© Velocity-B — c/o Rockstar CMO Ltd, 49 Greek St, London W1D 4EG</span>
+        <Link href="/privacy-policy" className="hover:text-navy">
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );
