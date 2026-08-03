@@ -47,7 +47,13 @@ export function PostCard({
           {author ? initials(author.name) : "VB"}
         </div>
         <div className="text-[12.5px] leading-tight text-[#9096a8]">
-          <span className="font-semibold text-[#42465c]">{author?.name ?? "Velocity-B"}</span>
+          {author ? (
+            <Link href={`/blog/author/${author.slug}`} className="font-semibold text-[#42465c] hover:text-blue">
+              {author.name}
+            </Link>
+          ) : (
+            <span className="font-semibold text-[#42465c]">Velocity-B</span>
+          )}
           {" · "}
           {formatPostDate(post.frontmatter.date)}
           {" · "}

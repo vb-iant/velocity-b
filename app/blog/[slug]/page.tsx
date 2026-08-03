@@ -75,7 +75,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               {initials(authorName)}
             </div>
             <div className="text-sm leading-snug">
-              <div className="font-display text-[15px] font-bold text-navy">{authorName}</div>
+              <div className="font-display text-[15px] font-bold text-navy">
+                {author ? (
+                  <Link href={`/blog/author/${author.slug}`} className="hover:text-blue">
+                    {authorName}
+                  </Link>
+                ) : (
+                  authorName
+                )}
+              </div>
               <div className="text-[13px] text-[#9096a8]">
                 {author?.role ? `${author.role} · ` : ""}
                 {formatPostDate(post.frontmatter.date)} · {post.readingTime} min read
@@ -122,7 +130,11 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               {initials(author.name)}
             </div>
             <div>
-              <h3 className="mb-1 font-display text-lg font-bold">{author.name}</h3>
+              <h3 className="mb-1 font-display text-lg font-bold">
+                <Link href={`/blog/author/${author.slug}`} className="hover:text-blue">
+                  {author.name}
+                </Link>
+              </h3>
               {author.role && (
                 <div className="mb-2.5 text-[13px] font-semibold text-orange">{author.role}</div>
               )}

@@ -111,6 +111,10 @@ export function getTagBySlug(slug: string): Tag | null {
   return getAllTags().find((t) => t.slug === slug) ?? null;
 }
 
+export function getPostsByAuthor(authorSlug: string): BlogPost[] {
+  return getAllBlogPosts().filter((p) => p.frontmatter.author === authorSlug);
+}
+
 export function getRelatedPosts(post: BlogPost, count = 3): BlogPost[] {
   const all = getAllBlogPosts();
   const postTags = new Set(post.frontmatter.tags ?? []);
