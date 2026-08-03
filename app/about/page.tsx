@@ -194,6 +194,14 @@ export default function AboutPage() {
               leadership grounded in real customer engagement and data
               science, not just a quota and a CRM login.
             </p>
+            <a
+              href="https://www.linkedin.com/in/alex-simonson/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-sm font-semibold text-blue hover:text-navy"
+            >
+              Connect on LinkedIn
+            </a>
             <p className="mt-6 text-lg italic leading-[1.6] text-navy">
               &ldquo;Alex coached me to win some of the most complex and
               exciting individual projects I have worked on. If you want a
@@ -204,14 +212,6 @@ export default function AboutPage() {
             <p className="mt-2 text-sm text-[#9096a8]">
               — Bruce Seymour, Director, MantisNLP
             </p>
-            <a
-              href="https://www.linkedin.com/in/alex-simonson/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-block text-sm font-semibold text-blue hover:text-navy"
-            >
-              Connect on LinkedIn
-            </a>
           </div>
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
             <a
@@ -239,13 +239,6 @@ export default function AboutPage() {
               writes about a lot of this most weeks on his own blog, if you
               want a sense of how he thinks.
             </p>
-            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
-              &ldquo;I recommend anyone looking for a voice of reason in the
-              software technology world to seek Ian&rsquo;s input.&rdquo;
-            </p>
-            <p className="mt-2 text-sm text-[#9096a8]">
-              — Siobhan Fagan, Editor-in-Chief, Reworked
-            </p>
             <a
               href="https://www.linkedin.com/in/iantruscott/"
               target="_blank"
@@ -254,6 +247,13 @@ export default function AboutPage() {
             >
               Connect on LinkedIn
             </a>
+            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
+              &ldquo;I recommend anyone looking for a voice of reason in the
+              software technology world to seek Ian&rsquo;s input.&rdquo;
+            </p>
+            <p className="mt-2 text-sm text-[#9096a8]">
+              — Siobhan Fagan, Editor-in-Chief, Reworked
+            </p>
           </div>
         </div>
       </section>

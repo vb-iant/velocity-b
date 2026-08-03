@@ -193,13 +193,6 @@ export default function HowWeWorkPage() {
               driving SaaS and data-led revenue growth strategies with a wide
               range of companies from start-ups to global enterprises.
             </p>
-            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
-              &ldquo;Alex coached me to win some of the most complex and
-              exciting individual projects I have worked on.&rdquo;
-            </p>
-            <p className="mt-2 text-sm text-[#9096a8]">
-              — Bruce Seymour, Client Director, MantisNLP
-            </p>
             <a
               href="https://www.linkedin.com/in/alex-simonson/"
               target="_blank"
@@ -208,6 +201,13 @@ export default function HowWeWorkPage() {
             >
               Connect on LinkedIn
             </a>
+            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
+              &ldquo;Alex coached me to win some of the most complex and
+              exciting individual projects I have worked on.&rdquo;
+            </p>
+            <p className="mt-2 text-sm text-[#9096a8]">
+              — Bruce Seymour, Client Director, MantisNLP
+            </p>
           </div>
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
             <a
@@ -232,13 +232,6 @@ export default function HowWeWorkPage() {
               product development, Ian is an experienced marketing leader,
               a 4x B2B CMO, former analyst, and trusted advisor.
             </p>
-            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
-              &ldquo;I recommend anyone looking for a voice of reason in the
-              software technology world to seek Ian&rsquo;s input.&rdquo;
-            </p>
-            <p className="mt-2 text-sm text-[#9096a8]">
-              — Siobhan Fagan, Chief Editor, Reworked
-            </p>
             <a
               href="https://www.linkedin.com/in/iantruscott/"
               target="_blank"
@@ -247,6 +240,13 @@ export default function HowWeWorkPage() {
             >
               Connect on LinkedIn
             </a>
+            <p className="mt-6 text-lg italic leading-[1.6] text-navy">
+              &ldquo;I recommend anyone looking for a voice of reason in the
+              software technology world to seek Ian&rsquo;s input.&rdquo;
+            </p>
+            <p className="mt-2 text-sm text-[#9096a8]">
+              — Siobhan Fagan, Chief Editor, Reworked
+            </p>
           </div>
         </div>
         <p className="mt-12 max-w-[720px] text-lg leading-[1.7] text-[#42465c]">
