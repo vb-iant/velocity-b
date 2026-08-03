@@ -1,7 +1,12 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import {
+  COOKIE_CHANGED_EVENT,
+  COOKIE_REOPEN_EVENT,
+  hasConsented,
+} from "./CookieConsent";
 
 interface HubspotFormProps {
   portalId: string;
@@ -15,6 +20,12 @@ type HbsptGlobal = { forms: { create: (opts: unknown) => void } };
 /**
  * Thin wrapper around HubSpot's v2 forms embed script.
  *
+ * The embed script drops HubSpot's own tracking cookie (hubspotutk) as soon
+ * as it loads, so it's gated behind the same site-wide cookie consent as
+ * GTM rather than treated as strictly necessary — one toggle covers both.
+ * Only mounts once `vb-consent=accepted`; otherwise shows a plain email
+ * fallback with a link back into the consent banner.
+ *
  * Renders a target div and calls hbspt.forms.create once the embed script is
  * available. Next.js's <Script> dedupes tags by `src` across the whole app,
  * so if this component is mounted on more than one page (e.g. /velocity-sprint
@@ -27,7 +38,18 @@ type HbsptGlobal = { forms: { create: (opts: unknown) => void } };
  * regardless of which page loaded the script first.
  */
 export function HubspotForm({ portalId, formId, region, targetId }: HubspotFormProps) {
+  const [consented, setConsented] = useState(false);
+
   useEffect(() => {
+    setConsented(hasConsented());
+    const onChange = () => setConsented(hasConsented());
+    window.addEventListener(COOKIE_CHANGED_EVENT, onChange);
+    return () => window.removeEventListener(COOKIE_CHANGED_EVENT, onChange);
+  }, []);
+
+  useEffect(() => {
+    if (!consented) return;
+
     let cancelled = false;
     let interval: ReturnType<typeof setInterval> | undefined;
 
@@ -58,7 +80,28 @@ export function HubspotForm({ portalId, formId, region, targetId }: HubspotFormP
       cancelled = true;
       if (interval) clearInterval(interval);
     };
-  }, [portalId, formId, region, targetId]);
+  }, [consented, portalId, formId, region, targetId]);
+
+  if (!consented) {
+    return (
+      <div className="border-2 border-hair p-6 text-lg leading-[1.7] text-[#42465c]">
+        <p>
+          This form needs cookies switched on to load.{" "}
+          <button
+            onClick={() => window.dispatchEvent(new Event(COOKIE_REOPEN_EVENT))}
+            className="font-bold text-navy underline"
+          >
+            Update your cookie preferences
+          </button>{" "}
+          or email us directly at{" "}
+          <a href="mailto:hello@velocity-b.com" className="font-bold text-navy underline">
+            hello@velocity-b.com
+          </a>
+          .
+        </p>
+      </div>
+    );
+  }
 
   return (
     <>

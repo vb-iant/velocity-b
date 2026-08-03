@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { LogoMark } from "./Logo";
 import { FOOTER_NAV, FOOTER_CONNECT } from "@/lib/nav";
+import { CookiePreferencesLink } from "./CookiePreferencesLink";
 
 export function SiteFooter() {
   return (
@@ -57,9 +58,12 @@ export function SiteFooter() {
 
       <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-hair pt-6 text-xs text-[#9aa0b5]">
         <span>© Velocity B — c/o Rockstar CMO Ltd, 49 Greek St, London W1D 4EG</span>
-        <Link href="/privacy-policy" className="hover:text-navy">
-          Privacy Policy
-        </Link>
+        <div className="flex gap-4">
+          <CookiePreferencesLink />
+          <Link href="/privacy-policy" className="hover:text-navy">
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </footer>
   );
