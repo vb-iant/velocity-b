@@ -30,13 +30,11 @@ function writeConsentCookie(value: ConsentValue) {
 function pushConsent(state: "granted" | "denied") {
   if (typeof window === "undefined") return;
   window.dataLayer = window.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
-  }
-  gtag("consent", "update", {
-    analytics_storage: state,
-    ad_storage: state,
-  });
+  window.dataLayer.push([
+    "consent",
+    "update",
+    { analytics_storage: state, ad_storage: state },
+  ]);
 }
 
 export function CookieConsent() {
@@ -95,10 +93,4 @@ export function CookieConsent() {
 
 export function hasConsented(): boolean {
   return readConsentCookie() === "accepted";
-}
-
-declare global {
-  interface Window {
-    dataLayer: unknown[];
-  }
 }
