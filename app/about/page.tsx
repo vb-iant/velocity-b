@@ -204,6 +204,14 @@ export default function AboutPage() {
             <p className="mt-2 text-sm text-[#9096a8]">
               — Bruce Seymour, Director, MantisNLP
             </p>
+            <a
+              href="https://www.linkedin.com/in/alex-simonson/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-sm font-semibold text-blue hover:text-navy"
+            >
+              Connect on LinkedIn
+            </a>
           </div>
           <div className="flex flex-col border-t-[6px] border-blue pt-6">
             <a
@@ -238,6 +246,14 @@ export default function AboutPage() {
             <p className="mt-2 text-sm text-[#9096a8]">
               — Siobhan Fagan, Editor-in-Chief, Reworked
             </p>
+            <a
+              href="https://www.linkedin.com/in/iantruscott/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-sm font-semibold text-blue hover:text-navy"
+            >
+              Connect on LinkedIn
+            </a>
           </div>
         </div>
       </section>
