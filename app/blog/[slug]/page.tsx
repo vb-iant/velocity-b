@@ -10,6 +10,7 @@ import {
   formatPostDate,
 } from "@/lib/blog";
 import { PostCard } from "@/components/blog/PostCard";
+import { NewsletterSignup } from "@/components/blog/NewsletterSignup";
 
 export function generateStaticParams() {
   return getAllBlogPosts().map((post) => ({ slug: post.frontmatter.slug }));
@@ -143,6 +144,10 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
         )}
+
+        <div className="mt-7">
+          <NewsletterSignup />
+        </div>
 
         {postTags.length > 0 && (
           <div className="mt-7 flex flex-wrap gap-2.5">
