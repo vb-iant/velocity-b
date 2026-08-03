@@ -3,6 +3,8 @@ import { AnimatedChevron } from "@/components/AnimatedChevron";
 
 export const metadata = {
   title: "Our Work — Velocity-B",
+  description:
+    "3radical, Storyblok, Connex One, Mango Solutions — a look at the growth engines Velocity-B has built, the pipelines it's filled, and the exits it's helped land.",
 };
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";

@@ -18,6 +18,7 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://velocity-b-virid.vercel.app"),
   title: "Velocity-B",
   description:
     "Velocity-B — hands-on go-to-market advice for B2B tech companies, from people who've actually done the job.",

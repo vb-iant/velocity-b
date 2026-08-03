@@ -3,6 +3,8 @@ import { AnimatedChevron } from "@/components/AnimatedChevron";
 
 export const metadata = {
   title: "UK Expansion — Velocity-B",
+  description:
+    "Entering the UK market without the guesswork or the cold start — Velocity-B becomes your UK team from day one, running sales, marketing, and account management as your own.",
 };
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";

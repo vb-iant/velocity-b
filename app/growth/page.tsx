@@ -3,6 +3,8 @@ import { AnimatedChevron } from "@/components/AnimatedChevron";
 
 export const metadata = {
   title: "Growth — Velocity-B",
+  description:
+    "Pipeline stuck, positioning unclear, sales and marketing pulling in different directions? Velocity-B runs growth as a service for B2B SaaS companies who need operators, not another deck.",
 };
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";

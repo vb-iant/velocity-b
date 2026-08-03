@@ -5,6 +5,8 @@ import { DriveCard } from "@/components/DriveCard";
 
 export const metadata = {
   title: "How We Work — Velocity-B",
+  description:
+    "No TLAs, no strategy decks gathering dust — senior operators from Velocity-B roll up their sleeves to fix pipeline, positioning, and the tooling quietly getting in the way.",
 };
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
