@@ -53,5 +53,3 @@ Yes, they know the current state and the challenge they have, and the future sta
 OK, so maybe we don’t want to share the warts-and-all story, but if we don’t help them, somebody else will, or maybe worse, they will stall, procrastinate, and do nothing.
 
 So, before we talk about ourselves, our features, functions, and all of that, let's first consider how our marketing and sales can empathize with the FOFU, and help with this change.
-
-{{cta('282131727581')}}

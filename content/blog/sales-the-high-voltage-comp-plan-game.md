@@ -59,5 +59,3 @@ If my existing client base is essentially a commission annuity that will pay me 
 The compensation plan should mirror the actions and objectives that the company wishes to accomplish if it wants to genuinely encourage salespeople to seek and close net new business. Plans should decrease the commission payment on existing business over time and bonus commission for new business that is closed.
 
 In simple terms, **not all sales are equal,** and make sure you **align the pay plan with the business goals**.
-
-{{cta('291873312984')}}

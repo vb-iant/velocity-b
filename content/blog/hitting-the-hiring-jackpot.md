@@ -43,5 +43,3 @@ Founders must expect their hiring needs to change in the fast-paced world of sca
 Many a founder has been left staring at their hand, not knowing whether to hold, fold, or twist on a new sales hire - or as Lemmy put it:
 
 *"The only card I need is the Ace of Spades….and don’t forget the Joker"*
-
-{{cta('291873312984')}}

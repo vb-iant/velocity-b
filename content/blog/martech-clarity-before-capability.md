@@ -75,5 +75,3 @@ I’ve summarised the process for brevity in a blog post, but we have a methodol
 If you are interested, maybe you are standing at the crossroads of what to do next with your marketing tech stack, or feel something is a little off, please get in touch. We’re always happy to chat about tech, and if you feel something is a little off, it probably is.
 
 ---
-
-{{cta('291873312984')}}

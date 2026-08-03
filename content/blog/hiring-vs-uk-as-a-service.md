@@ -51,5 +51,3 @@ For many SaaS companies, that's a faster and lower-risk route to building a sust
 How are you approaching international expansion—through direct hiring or a more flexible market-entry model?
 
 ---
-
-{{cta('417717620940')}}

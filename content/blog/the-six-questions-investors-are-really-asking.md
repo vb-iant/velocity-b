@@ -113,5 +113,3 @@ If you're a founder, ask them before your investors do.
 Because funding provides the fuel. Commercial execution determines how far the business flies.
 
 ---
-
-{{cta('335622945013')}}

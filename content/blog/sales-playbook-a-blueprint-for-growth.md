@@ -63,5 +63,3 @@ If you are a startup building your first sales process or a scaleup looking to o
 In short, a great sales playbook doesn’t just guide your team—it drives your business forward.
 
 ---
-
-{{cta('297032459508')}}

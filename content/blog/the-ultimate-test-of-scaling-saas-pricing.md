@@ -69,5 +69,3 @@ Pricing is not a set piece; it’s a dynamic strategy that must evolve as the ga
 ---
 
 *Want to learn more about setting effective pricing, or just commiserate with Alex? Book a meeting below...*
-
-{{cta('291873312984')}}

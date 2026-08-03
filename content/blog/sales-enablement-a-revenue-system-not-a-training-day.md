@@ -57,5 +57,3 @@ Sales enablement isn’t a content dump or a training day; it’s a system that 
 B2B tech vendors that invest in sales enablement don’t just improve sales performance; they build a more scalable, resilient revenue engine.
 
 ---
-
-{{cta('320749374668')}}

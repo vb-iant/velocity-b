@@ -61,5 +61,3 @@ They invest in shared data, shared messaging, shared planning, and shared succes
 If you’re looking to scale a B2B SaaS business, the choice is clear. It’s not sales vs. marketing. It’s sales and marketing, working together to create a consistent buyer experience, drive efficient growth, and build a durable competitive advantage.
 
 ---
-
-{{cta('324104605904')}}

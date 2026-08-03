@@ -93,6 +93,4 @@ We have our own little thing we are working on. We call it the [Velocity Assessm
 
 As I mentioned at the beginning, an extended blog post this week, but in the spirit of the topic, I hope you found it useful. And, if you are wondering where to start with your content marketing or looking to inject a bit of relevance and improve engagement, start with your practitioner persona.
 
-Ask what would help them right now? And how can you do that? 
-
-{{cta('284870931685')}}
+Ask what would help them right now? And how can you do that?

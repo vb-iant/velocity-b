@@ -74,6 +74,4 @@ Ultimately, the best approach may be hybrid: outsource early to build pipeline m
 
 ---
 
-*But before making a call on which path to follow, there is little point in scaling lead generation if you have not identified your ICP, created your value propositions, and put in place in your sales process, as generating leads without an actionable sales and marketing strategy will just lead to wasted resources and missed opportunities. We can help with that* - [get in touch](/contact-us). 
-
-{{cta('291873312984')}}
+*But before making a call on which path to follow, there is little point in scaling lead generation if you have not identified your ICP, created your value propositions, and put in place in your sales process, as generating leads without an actionable sales and marketing strategy will just lead to wasted resources and missed opportunities. We can help with that* - [get in touch](/contact-us).

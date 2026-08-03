@@ -39,5 +39,3 @@ Plus, it’s not just not doing enough with what you have, a well-timed jump ont
 So, maybe time to take stock, review what you need, what you have, and take a look at the art of the possible.
 
 And, if you don’t have time, maybe we can help.
-
-{{cta('284870934743')}}

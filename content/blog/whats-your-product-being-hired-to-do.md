@@ -84,5 +84,3 @@ Finally, if the buyer was reviewing your website, could a buyer say:
 If your homepage headline only makes sense to someone who already knows your product category, you’re not explaining the job; you’re listing the tools. And, your buyer isn’t browsing tools; they’re interviewing solutions to the practical and emotional jobs to be done.
 
 Give them a reason to hire your product.
-
-{{cta('291873312984')}}

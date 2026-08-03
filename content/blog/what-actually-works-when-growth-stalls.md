@@ -68,5 +68,3 @@ It’s written for B2B tech founders, SME leaders, and commercial teams who know
 It’s not designed to be exhaustive. It’s intended to be useful for teams that want to regain focus; it’s a spark to get you started.
 
 ### Download the guide
-
-{{cta('335622945013')}}

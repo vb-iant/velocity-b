@@ -83,5 +83,3 @@ Brand awareness and trust are a marketing multiplier, removing friction from rev
 Create ART, win over the 95% today, and they’ll become part of your 5% tomorrow.
 
 ---
-
-{{cta('286604024027')}}

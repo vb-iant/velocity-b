@@ -47,5 +47,3 @@ This is where strong boards, Independent NEDs, and advisors who have seen this b
 If you’re experiencing unexpected consequences. And let’s be honest. who hasn’t. Why not get in touch to arrange a confidential conversation?
 
 ---
-
-{{cta('374682779890')}}

@@ -65,5 +65,3 @@ Some will argue that the boardroom presentation is the crucial moment, while oth
 In my experience, the business is won much earlier in the process by those who plan, prepare, practise, and pay close attention to the details in order to set the tone for the relationship in that all-important first face-to-face meeting. 
 
 Swinging, swearing, and the shampoo.
-
-{{cta('282131727581')}}

@@ -56,6 +56,4 @@ The only answer that can be given is ‘workable’ – where the number of targ
   
 The secret to determining where the business is going to come from is to ask the right questions in order to generate a finite list that is targeted at your target market and can be efficiently worked on over a predetermined amount of time.
 
-Want to understand where your business could come from? [Get in touch](/contact-us), let's have a chat about your path to revenue. 
-
-{{cta('284870932698')}}
+Want to understand where your business could come from? [Get in touch](/contact-us), let's have a chat about your path to revenue.

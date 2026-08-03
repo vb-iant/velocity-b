@@ -50,5 +50,3 @@ To hire someone part-time, perhaps on a similar budget that includes all the oth
 To return to my “short order cook” analogy earlier - it’s probably closer to a part-time employee being an average chef in the kitchen 3 days a week, whereas you can think of a fractional leader as more like a Michelin star chef coming in, designing the menu, training the team, and helping out with key programs.
 
 Let’s be clear, I might swear, but I am no Gordon Ramsey, and we do not have a Michelin star in cooking, but that’s what we are offering here at Velocity B, an agile service that can come in, design a path to revenue, train the team, and get your sales and marketing working.
-
-{{cta('284898403556')}}

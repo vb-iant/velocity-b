@@ -39,5 +39,3 @@ As you look to scale sales from early adopters to broader market penetration, th
 Many early-stage and Series A tech companies unintentionally create friction through complex pricing, unclear product positioning, or custom proposals for every deal. You need to make it easier and quicker for the buyer to say ‘Yes’ by simplifying the buying journey through standardising packaging, pricing and contracts.
 
 For Series A companies aiming for Series B, shortening the sales cycle is not just about closing deals faster; it’s about building a predictable, scalable revenue engine that gives investors confidence that growth will continue as the business scales.
-
-{{cta('320749374668')}}

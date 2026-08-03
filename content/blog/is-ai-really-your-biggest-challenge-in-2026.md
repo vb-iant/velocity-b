@@ -55,5 +55,3 @@ For now, I’d love to hear from you:
 *What’s the single biggest challenge your business is facing in 2026?*
 
 ---
-
-{{cta('374682779890')}}

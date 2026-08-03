@@ -27,5 +27,3 @@ So what does 'ruthless' mean?
 5. You have clear mutually agreed next steps, as if follow-ups are vague with no ownership or timeline, then the deal momentum will stall and we all know that time kills all deals.
 
 In simple terms, fewer deals with a better fit = higher close rates, qualifying out of a deal early is not a sign of poor sales performance or weakness but of confidence and maturity in knowing what a ‘real’ opportunity looks like.
-
-{{cta('304668631282')}}

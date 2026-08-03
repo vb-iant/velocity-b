@@ -41,5 +41,3 @@ Every meeting should end with a specific action, owner, and timeline, as the “
 Simplify the paperwork wherever possible, as complicated pricing, long contracts, and legal redlines will slow deals to a crawl.
 
 Selling SaaS now isn’t about pushing harder and applying more pressure, it’s about making decisions easier, as when you do that, deals move faster.
-
-{{cta('365035558122')}}

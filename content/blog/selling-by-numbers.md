@@ -57,5 +57,3 @@ We know that every business, market, and deal is different, and it is easy to po
 And this is not just the domain of management; be it the Founder, Chief Revenue Officer, Sales Director, every salesperson should be taking responsibility for owning their metrics and numbers.
 
 > ‘The most valuable math you can learn is how to calculate the future cost of your current decisions.’ - Anonymous
-
-{{cta('291873312984')}}

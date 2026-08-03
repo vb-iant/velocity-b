@@ -85,5 +85,3 @@ Tyrell Biggs might have had a plan to beat Mike Tyson, but he lost to a technica
 According to [the commentators at the time](https://www.thefightcity.com/tyson-vs-biggs/), his plan, to last the distance through a strategy of moving slowly to conserve energy, “backfired completely; standing still guaranteed he would never make it anywhere close to the final bell”.
 
 According to the same commentary, Tyrell lacked the stamina to execute the plan. It had not been pressure-tested by his trainers, and he couldn’t react to the change.
-
-{{cta('374682779890')}}

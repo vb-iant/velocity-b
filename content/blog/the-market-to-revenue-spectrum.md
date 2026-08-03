@@ -139,5 +139,3 @@ This isn’t a linear buyer journey or a simple maturity model. It’s far more 
 Each type of demand needs a different sales and marketing motion, and I’ll explore those tactics in a future article.
 
 If that interests you, please [follow us on LinkedIn](https://www.linkedin.com/company/velocityb/) or subscribe below:
-
-{{cta('304668631282')}}

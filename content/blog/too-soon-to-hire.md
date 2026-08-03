@@ -67,5 +67,3 @@ Most growth-stage companies don’t need a full-time CMO or CRO yet, but they do
 If this is where you are right now, let’s chat.
 
 ---
-
-{{cta('389907330296')}}

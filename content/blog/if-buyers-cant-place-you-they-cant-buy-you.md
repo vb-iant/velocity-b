@@ -106,5 +106,3 @@ A "market of one" isn’t a market, it’s a marketing problem and if you pick a
 If buyers can’t place you, they can’t buy you. And if they can’t find you, they’ll buy someone they can.
 
 ---
-
-{{cta('291873312984')}}

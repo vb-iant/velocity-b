@@ -45,5 +45,3 @@ You need to hire individuals who thrive in dynamic environments, align with the 
 Hiring sales and marketing for Series B, isn’t just about filling roles, it’s about building a revenue engine and demonstrating to investors that the business is ready to scale efficiently and sustainably.
 
 ---
-
-{{cta('389907330296')}}

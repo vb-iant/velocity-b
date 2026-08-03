@@ -53,5 +53,3 @@ Often, founders read a book or a few posts and wonder, “How hard can sales act
 To address this, the best-performing startups led by technical or product founders also have advisors who guide them through the early days (and often later years) of their journey – if you want support navigating the pitfalls of sales and marketing, [reach out to Ian or me](/contact-us).
 
 ---
-
-{{cta('291873312984')}}

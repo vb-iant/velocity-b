@@ -118,5 +118,3 @@ With this insight, you can surgically apply change where needed, not kill the pa
 Most teams aren’t underperforming because they lack talent, tools, or data, or because they're doing the wrong things; they’re underperforming because the right things aren’t connected. Auditing your Revenue Department is the first step in unlocking that potential velocity.
 
 ---
-
-{{cta('284898403556')}}

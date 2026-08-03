@@ -75,5 +75,3 @@ Great founders don’t become less important as their businesses grow. They beco
 ***Need help making that transition? We’d love to help.***
 
 ---
-
-{{cta('389907330296')}}

@@ -41,5 +41,3 @@ So, the B we referred to earlier is not Series B, but Business.
 Which is handy, as our specialty and our hard-won experience is in B2B. 
 
 It’s time to create ART - build awareness, create revenue, and develop trust in the market.
-
-{{cta('282131727581')}}
