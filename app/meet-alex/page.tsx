@@ -12,36 +12,31 @@ export const metadata: Metadata = {
 export default function MeetAlexPage() {
   return (
     <main>
-      {/* Hero + booking calendar */}
+      {/* Hero */}
       <section className="mx-auto max-w-[1180px] px-12 py-20">
+        <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
+          <AnimatedChevron className="text-blue" />
+          Hello!
+        </h1>
+        <h2 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
+          Book a Meeting
+        </h2>
+      </section>
+
+      {/* Copy + booking calendar */}
+      <section className="mx-auto max-w-[1180px] border-t border-hair px-12 py-20">
         <div className="grid grid-cols-1 items-start gap-16 md:grid-cols-2">
           <div>
-            <h1 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight md:text-[56px]">
-              <AnimatedChevron className="text-blue" />
-              Hello!
-            </h1>
-            <h2 className="font-display text-[42px] font-bold leading-[1.02] tracking-tight text-blue md:text-[56px]">
-              Book a Meeting
-            </h2>
-
-            <p className="mt-6 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
-              Pick whatever works for you below — a discovery call, a
-              specific problem you&rsquo;re wrestling with, or just a chat
-              about where B2B tech go-to-market is heading. Choose a slot
-              that suits and I&rsquo;ll confirm it, along with a Google Meet
-              link; there&rsquo;s nothing to download, just a browser.
-            </p>
-            <p className="mt-4 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
-              If nothing on the calendar works, or something&rsquo;s gone
-              wrong with it, get in touch through the{" "}
-              <a href="/contact" className="font-bold text-navy underline">
-                contact form
-              </a>{" "}
-              instead and I&rsquo;ll sort you out directly.
+            <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
+              Please use the calendar on the right to book a discovery call,
+              or whatever&rsquo;s on your mind. Once you&rsquo;ve chosen a
+              time that works for you, I&rsquo;ll get back to you and
+              confirm. We use Google Meet, so you&rsquo;ll just need a
+              browser &mdash; nothing to download.
             </p>
 
             <p className="mt-6 text-lg leading-[1.7] text-navy">
-              Cheers,
+              Cheers!
               <br />
               Alex
             </p>
@@ -62,6 +57,15 @@ export default function MeetAlexPage() {
               />
               <span className="pointer-events-none absolute inset-0 bg-navy/25 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </a>
+
+            <p className="mt-6 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
+              PS: If you can&rsquo;t find a slot that works, or there&rsquo;s
+              a problem with the form, then please contact me through the{" "}
+              <a href="/contact" className="font-bold text-navy underline">
+                contact form
+              </a>
+              .
+            </p>
           </div>
 
           <div className="sticky top-8 border-t-[6px] border-orange bg-[#fafbfd] px-8 py-9">
