@@ -14,6 +14,9 @@ const nextConfig = {
       { source: '/meet-velocity-b', destination: '/contact', permanent: true },
       { source: '/series-b-marketing-playbook', destination: '/resources', permanent: true },
       { source: '/meet-alex-us-expansion', destination: '/meet-alex', permanent: true },
+      { source: '/meetings/simonson', destination: '/meet-alex', permanent: true },
+      { source: '/meetings/ian-truscott', destination: '/meet-ian', permanent: true },
+      { source: '/meetings/ian-truscott/iod-mentoring-slots', destination: '/meet-ian', permanent: true },
     ];
   },
 };

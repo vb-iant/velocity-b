@@ -9,7 +9,7 @@ import { PRIMARY_NAV, NAV_CTA } from "@/lib/nav";
 // Single-purpose conversion landing pages get a lean, logo-only header —
 // the full site nav would just be an exit ramp off the page's one job.
 // Add a route prefix here if another landing page needs the same treatment.
-const LEAN_HEADER_ROUTES = ["/velocity-sprint", "/velocity-assessment", "/meet-alex"];
+const LEAN_HEADER_ROUTES = ["/velocity-sprint", "/velocity-assessment", "/meet-alex", "/meet-ian"];
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
