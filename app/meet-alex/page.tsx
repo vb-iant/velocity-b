@@ -30,10 +30,12 @@ export default function MeetAlexPage() {
             <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
               Please use the calendar on the right to book a discovery call,
               or whatever&rsquo;s on your mind.
-              <br />
+            </p>
+            <p className="mt-4 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
               Once you&rsquo;ve chosen a time that works for you, I&rsquo;ll
               get back to you and confirm.
-              <br />
+            </p>
+            <p className="mt-4 max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
               We use Google Meet, so you&rsquo;ll just need a browser
               &mdash; nothing to download.
             </p>
