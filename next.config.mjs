@@ -13,6 +13,7 @@ const nextConfig = {
       { source: '/clean-tech', destination: '/our-work', permanent: true },
       { source: '/meet-velocity-b', destination: '/contact', permanent: true },
       { source: '/series-b-marketing-playbook', destination: '/resources', permanent: true },
+      { source: '/meet-alex-us-expansion', destination: '/meet-alex', permanent: true },
     ];
   },
 };
