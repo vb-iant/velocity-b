@@ -29,10 +29,13 @@ export default function MeetAlexPage() {
           <div>
             <p className="max-w-[480px] text-lg leading-[1.7] text-[#42465c]">
               Please use the calendar on the right to book a discovery call,
-              or whatever&rsquo;s on your mind. Once you&rsquo;ve chosen a
-              time that works for you, I&rsquo;ll get back to you and
-              confirm. We use Google Meet, so you&rsquo;ll just need a
-              browser &mdash; nothing to download.
+              or whatever&rsquo;s on your mind.
+              <br />
+              Once you&rsquo;ve chosen a time that works for you, I&rsquo;ll
+              get back to you and confirm.
+              <br />
+              We use Google Meet, so you&rsquo;ll just need a browser
+              &mdash; nothing to download.
             </p>
 
             <p className="mt-6 text-lg leading-[1.7] text-navy">
