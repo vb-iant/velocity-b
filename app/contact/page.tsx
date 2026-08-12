@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { AnimatedChevron } from "@/components/AnimatedChevron";
 import { HubspotForm } from "@/components/HubspotForm";
 
+const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
 const ctaOutline =
   "inline-block border-2 border-navy px-[30px] py-4 text-[15px] font-bold text-navy";
 
@@ -33,7 +35,10 @@ export default function ContactPage() {
               actually going on in your business.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-col items-start gap-4">
+              <Link href="/meet-alex" className={ctaSolid}>
+                Book a Meeting
+              </Link>
               <a
                 href="https://www.linkedin.com/company/velocityb/"
                 target="_blank"
