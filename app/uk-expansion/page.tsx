@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { AnimatedChevron } from "@/components/AnimatedChevron";
+import { getAllBlogPosts } from "@/lib/blog";
+import { LatestOnBlog } from "@/components/blog/LatestOnBlog";
 
 export const metadata = {
   title: "UK Expansion — Velocity-B",
@@ -123,6 +125,9 @@ const SPRINT_PHASES = [
 ];
 
 export default function UkExpansionPage() {
+  const latestPost =
+    getAllBlogPosts().find((p) => p.frontmatter.tags?.includes("uk-market-entry")) ?? null;
+
   return (
     <main>
       {/* Hero */}
@@ -423,6 +428,9 @@ export default function UkExpansionPage() {
           Get in Touch
         </Link>
       </div>
+
+      {/* Read more — latest UK market entry post */}
+      {latestPost && <LatestOnBlog post={latestPost} />}
     </main>
   );
 }

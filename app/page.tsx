@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { AnimatedChevron } from "@/components/AnimatedChevron";
+import { getAllBlogPosts } from "@/lib/blog";
+import { LatestOnBlog } from "@/components/blog/LatestOnBlog";
 
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
 const ctaOutline =
@@ -8,6 +10,8 @@ const ctaOutline =
 const ctaAccent = "inline-block bg-orange px-[30px] py-4 text-[15px] font-bold text-navy";
 
 export default function Home() {
+  const latestPost = getAllBlogPosts()[0] ?? null;
+
   return (
     <main>
       {/* Hero */}
@@ -321,6 +325,9 @@ export default function Home() {
           Discover The Velocity Sprint
         </Link>
       </div>
+
+      {/* Read more — latest blog post */}
+      {latestPost && <LatestOnBlog post={latestPost} />}
     </main>
   );
 }
