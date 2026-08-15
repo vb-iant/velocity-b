@@ -5,6 +5,9 @@ export const size = ogSize;
 export const contentType = ogContentType;
 export const alt = "Velocity-B Blog — Author";
 
+// See app/blog/[slug]/opengraph-image.tsx for why this is forced static.
+export const dynamic = "force-static";
+
 export function generateStaticParams() {
   return Object.values(getAllAuthors()).map((author) => ({ slug: author.slug }));
 }

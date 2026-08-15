@@ -43,8 +43,17 @@ let boldFontPromise: Promise<ArrayBuffer> | null = null;
 let mediumFontPromise: Promise<ArrayBuffer> | null = null;
 
 async function getFonts() {
-  boldFontPromise ??= fetch(BOLD_FONT_URL).then((res) => res.arrayBuffer());
-  mediumFontPromise ??= fetch(MEDIUM_FONT_URL).then((res) => res.arrayBuffer());
+  // force-cache is required here: an uncached fetch inside an image
+  // metadata route makes the whole route dynamic, which defeats
+  // generateStaticParams on the per-slug/per-author variants of this
+  // renderer and (on Vercel) leaves those routes unable to read
+  // content/blog/*.md at request time.
+  boldFontPromise ??= fetch(BOLD_FONT_URL, { cache: "force-cache" }).then((res) =>
+    res.arrayBuffer()
+  );
+  mediumFontPromise ??= fetch(MEDIUM_FONT_URL, { cache: "force-cache" }).then((res) =>
+    res.arrayBuffer()
+  );
   const [bold, medium] = await Promise.all([boldFontPromise, mediumFontPromise]);
   return { bold, medium };
 }

@@ -1,5 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // The opengraph-image routes under [slug]/[author] read content/*.md via
+  // fs at request time, but Next's file tracer doesn't pick that up the way
+  // it does for the corresponding page.tsx routes — leaving those files out
+  // of the deployed serverless function bundle on Vercel and causing the
+  // routes to silently fall back to generic placeholder text. This forces
+  // them in explicitly.
+  experimental: {
+    outputFileTracingIncludes: {
+      "/blog/[slug]/opengraph-image": [
+        "./content/blog/**/*.md",
+        "./content/authors/**/*.md",
+        "./content/tags.json",
+      ],
+      "/blog/author/[slug]/opengraph-image": ["./content/authors/**/*.md"],
+    },
+  },
   async redirects() {
     return [
       // Old HubSpot site -> new Next.js site (launch redirect map)
