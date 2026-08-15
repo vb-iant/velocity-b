@@ -3,9 +3,9 @@ import Image from "next/image";
 import type { BlogPost } from "@/lib/blog";
 import { AnimatedChevron } from "@/components/AnimatedChevron";
 
-// "Read more" module — surfaces a single, page-relevant blog post above the
-// footer. Reuses each post's auto-generated OG image (lib/og.tsx) as the
-// thumbnail rather than requiring a separate hero image per post.
+// "Featured Article" module — surfaces a single, page-relevant blog post
+// above the footer. Reuses each post's auto-generated OG image (lib/og.tsx)
+// as the thumbnail rather than requiring a separate hero image per post.
 export function LatestOnBlog({ post }: { post: BlogPost }) {
   const href = `/blog/${post.frontmatter.slug}`;
 
@@ -13,7 +13,7 @@ export function LatestOnBlog({ post }: { post: BlogPost }) {
     <section className="mx-auto max-w-[1180px] border-t border-hair px-12 pb-24 pt-[70px]">
       <h2 className="mb-9 font-display text-[28px] font-bold">
         <AnimatedChevron className="text-blue" />
-        Read more
+        Featured Article
       </h2>
       <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
         <Link href={href} className="block overflow-hidden rounded-sm border border-hair">
