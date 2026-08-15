@@ -28,5 +28,10 @@
     "id": "600000000006",
     "name": "Company",
     "slug": "company"
+  },
+  {
+    "id": "600000000007",
+    "name": "UK-as-a-Service",
+    "slug": "uk-as-a-service"
   }
 ]
