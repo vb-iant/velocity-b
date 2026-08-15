@@ -3,7 +3,7 @@ title: "Hiring vs UK-as-a-Service"
 slug: "hiring-vs-uk-as-a-service"
 date: "2026-06-08"
 author: "alex-simonson"
-tags: ["uk-as-a-service"]
+tags: ["uk-market-entry"]
 excerpt: "If you are considering entering the lucrative UK B2B tech market, Alex shares some experience that could help..."
 originalUrl: "https://velocity-b.com/blog/hiring-vs-uk-as-a-service"
 ---
