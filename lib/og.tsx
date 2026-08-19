@@ -23,6 +23,13 @@ const ACCENTS = {
 
 export type OgAccent = keyof typeof ACCENTS;
 
+function withAlpha(hex: string, alpha: number): string {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
 // Deterministic accent per tag, in tags.json order — cycles the same 3 brand
 // colours used elsewhere (e.g. PostCard's BORDER_COLORS), since tags don't
 // otherwise carry a colour of their own.
@@ -148,6 +155,148 @@ export async function renderOgImage({
             }}
           >
             Velocity-B
+          </div>
+        </div>
+      </div>
+    ),
+    {
+      ...ogSize,
+      fonts: [
+        { name: "Space Grotesk Bold", data: bold, weight: 700, style: "normal" },
+        { name: "Space Grotesk Medium", data: medium, weight: 500, style: "normal" },
+      ],
+    }
+  );
+}
+
+// Richer template used specifically for individual blog posts: adds the
+// author byline and a large background chevron for more visual presence
+// than the plain page template above. The chevron is drawn as a single SVG
+// <path> stroke (not the ">" text glyph) — at this scale Space Grotesk's
+// ">" character shows a visible gap at the vertex, whereas a stroked path
+// with a round line-join always closes cleanly regardless of size.
+export async function renderBlogOgImage({
+  tag,
+  title,
+  author,
+  accent,
+}: {
+  tag: string;
+  title: string;
+  author: string;
+  accent: OgAccent;
+}) {
+  const { bold, medium } = await getFonts();
+  const accentColor = ACCENTS[accent];
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          display: "flex",
+          position: "relative",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          width: "100%",
+          height: "100%",
+          background: "#0A1543",
+          padding: "76px",
+          overflow: "hidden",
+        }}
+      >
+        <svg
+          style={{ position: "absolute", top: -320, right: -300 }}
+          width="1150"
+          height="1150"
+          viewBox="0 0 100 100"
+        >
+          <path
+            d="M26 4 L80 50 L26 96"
+            fill="none"
+            stroke={withAlpha(accentColor, 0.12)}
+            strokeWidth="16"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+
+        <div
+          style={{
+            display: "flex",
+            fontFamily: "Space Grotesk Medium",
+            fontSize: 22,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: accentColor,
+          }}
+        >
+          {tag}
+        </div>
+
+        <div style={{ display: "flex", alignItems: "flex-start", gap: 26 }}>
+          <div
+            style={{
+              display: "flex",
+              fontFamily: "Space Grotesk Bold",
+              fontSize: 96,
+              lineHeight: 1,
+              color: accentColor,
+            }}
+          >
+            {">"}
+          </div>
+          <div
+            style={{
+              display: "flex",
+              fontFamily: "Space Grotesk Bold",
+              fontSize: 72,
+              lineHeight: 1.12,
+              color: "#ffffff",
+              maxWidth: 700,
+            }}
+          >
+            {title}
+          </div>
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+          <div
+            style={{
+              display: "flex",
+              fontFamily: "Space Grotesk Medium",
+              fontSize: 22,
+              color: "rgba(255,255,255,0.68)",
+            }}
+          >
+            {`By ${author}`}
+          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+            <div
+              style={{
+                display: "flex",
+                width: 44,
+                height: 44,
+                borderRadius: "50%",
+                background: "#ffffff",
+                alignItems: "center",
+                justifyContent: "center",
+                fontFamily: "Space Grotesk Bold",
+                fontSize: 20,
+                color: "#0A1543",
+              }}
+            >
+              B
+            </div>
+            <div
+              style={{
+                display: "flex",
+                fontFamily: "Space Grotesk Bold",
+                fontSize: 22,
+                color: "#ffffff",
+              }}
+            >
+              Velocity-B
+            </div>
           </div>
         </div>
       </div>

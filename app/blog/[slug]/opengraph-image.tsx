@@ -1,5 +1,5 @@
-import { getAllBlogPosts, getBlogPostBySlug, getAllTags } from "@/lib/blog";
-import { renderOgImage, ogSize, ogContentType, accentForTagIndex } from "@/lib/og";
+import { getAllBlogPosts, getBlogPostBySlug, getAllTags, getAuthorBySlug } from "@/lib/blog";
+import { renderBlogOgImage, ogSize, ogContentType, accentForTagIndex } from "@/lib/og";
 
 export const size = ogSize;
 export const contentType = ogContentType;
@@ -22,10 +22,12 @@ export default async function Image({ params }: { params: { slug: string } }) {
   const primaryTagSlug = post?.frontmatter.tags?.[0];
   const tagIndex = primaryTagSlug ? allTags.findIndex((t) => t.slug === primaryTagSlug) : -1;
   const tag = tagIndex >= 0 ? allTags[tagIndex] : null;
+  const author = post?.frontmatter.author ? getAuthorBySlug(post.frontmatter.author) : null;
 
-  return renderOgImage({
-    eyebrow: tag?.name ?? "Blog",
+  return renderBlogOgImage({
+    tag: tag?.name ?? "Blog",
     title: post?.frontmatter.title ?? "Velocity-B Blog",
+    author: author?.name ?? "Velocity-B",
     accent: accentForTagIndex(tagIndex >= 0 ? tagIndex : 0),
   });
 }
