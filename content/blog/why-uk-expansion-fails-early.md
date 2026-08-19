@@ -4,11 +4,11 @@ slug: "why-uk-expansion-fails-early"
 date: "2026-08-19"
 author: "alex-simonson"
 tags: ["uk-market-entry"]
-excerpt: "Alex breaks down the four things US SaaS companies need to validate before scaling UK go-to-market — ICP, messaging, commercial model, and competitive position."
+excerpt: "This comes from the file marked \"we've seen these mistakes, so you don't have to\" as Alex breaks down the four things US companies miss when entering the UK market."
 originalUrl: "https://velocity-b.com/blog/why-uk-expansion-fails-early"
 ---
 
-*Alex breaks down the four things US SaaS companies need to validate before scaling UK go-to-market — ICP, messaging, commercial model, and competitive position.*
+*This comes from the file marked "we've seen these mistakes, so you don't have to" as Alex breaks down the four things US companies miss when entering the UK market.*
 
 ---
 
