@@ -4,11 +4,11 @@ slug: "why-uk-expansion-fails-early"
 date: "2026-08-19"
 author: "alex-simonson"
 tags: ["uk-market-entry"]
-excerpt: "This comes from the file marked \"we've seen these mistakes, so you don't have to\" as Alex breaks down the four things US companies miss when entering the UK market."
+excerpt: "Alex has seen these mistakes, so you don't have to - here are 4 things that US companies miss when entering the UK market."
 originalUrl: "https://velocity-b.com/blog/why-uk-expansion-fails-early"
 ---
 
-*This comes from the file marked "we've seen these mistakes, so you don't have to" as Alex breaks down the four things US companies miss when entering the UK market.*
+*Alex has seen these mistakes, so you don't have to - here are 4 things that US companies miss when entering the UK market.*
 
 ---
 
