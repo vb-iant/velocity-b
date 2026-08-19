@@ -43,5 +43,3 @@ Rapid growth brings constant change, so hiring for cultural fit is critical beca
 You need to hire individuals who thrive in dynamic environments, align with the company’s values, can operate in ambiguity and adapt quickly, as a strong cultural fit reduces friction, improves collaboration across increasingly specialised teams, and ensures new hires can adapt quickly without disrupting momentum.
 
 Hiring sales and marketing for Series B, isn’t just about filling roles, it’s about building a revenue engine and demonstrating to investors that the business is ready to scale efficiently and sustainably.
-
----

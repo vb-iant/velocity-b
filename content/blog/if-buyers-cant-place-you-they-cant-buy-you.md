@@ -104,5 +104,3 @@ Now we need to test it:
 A "market of one" isn’t a market, it’s a marketing problem and if you pick a lane that the buyer can recognize, you’ll be more discoverable, you’ll speed up the sales cycle as the buyer will “get” you quicker without needing to educate the value of a new category, and will know how to navigate procurement, as you tap into an established budget.
 
 If buyers can’t place you, they can’t buy you. And if they can’t find you, they’ll buy someone they can.
-
----

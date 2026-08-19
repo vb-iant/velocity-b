@@ -68,5 +68,3 @@ By taking this approach, understanding our community, products, and pricing, fin
 ## We can help
 
 If you’re leading a software business and believe there are “acres of diamonds” (or maybe just a lucrative handful) in your existing product and customers, we provide a second pair of eyes that can see where growth might be hiding in plain sight inside your business.
-
----

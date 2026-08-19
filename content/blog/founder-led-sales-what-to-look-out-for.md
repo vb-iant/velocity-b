@@ -51,5 +51,3 @@ So what are the signs to look out for that will determine if you are now in a po
 Often, founders read a book or a few posts and wonder, “How hard can sales actually be?” You dive right in, talk to a few clients, and bang - your first sale happens! Founders who are driven and have a good product-market fit can typically make a few sales, but what happens after that? Beyond the founder, how does this scale?
 
 To address this, the best-performing startups led by technical or product founders also have advisors who guide them through the early days (and often later years) of their journey – if you want support navigating the pitfalls of sales and marketing, [reach out to Ian or me](/contact-us).
-
----

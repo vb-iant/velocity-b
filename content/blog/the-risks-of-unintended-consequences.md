@@ -45,5 +45,3 @@ They come from the consequences you didn’t model.
 This is where strong boards, Independent NEDs, and advisors who have seen this before can offer guidance and add real value.
 
 If you’re experiencing unexpected consequences. And let’s be honest. who hasn’t. Why not get in touch to arrange a confidential conversation?
-
----

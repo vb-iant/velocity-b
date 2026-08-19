@@ -53,5 +53,3 @@ In forthcoming posts, I’ll share practical ways SMEs can tackle these challeng
 For now, I’d love to hear from you:
 
 *What’s the single biggest challenge your business is facing in 2026?*
-
----

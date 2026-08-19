@@ -61,5 +61,3 @@ In today’s tech landscape, growth is not just about acquiring new customers—
 If you are a startup building your first sales process or a scaleup looking to optimise your revenue operations, investing time in developing a comprehensive playbook will pay dividends in productivity, performance, and customer satisfaction.
 
 In short, a great sales playbook doesn’t just guide your team—it drives your business forward.
-
----

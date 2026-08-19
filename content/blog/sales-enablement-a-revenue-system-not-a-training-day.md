@@ -55,5 +55,3 @@ Don’t swallow the happy pill and get taken in by chasing vanity metrics, but i
 Sales enablement isn’t a content dump or a training day; it’s a system that makes selling easier, faster, and more consistent as you scale.
 
 B2B tech vendors that invest in sales enablement don’t just improve sales performance; they build a more scalable, resilient revenue engine.
-
----

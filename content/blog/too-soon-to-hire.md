@@ -65,5 +65,3 @@ By providing hands-on fractional marketing leadership, we demonstrated what was 
 Most growth-stage companies don’t need a full-time CMO or CRO yet, but they do need the expertise, experience, and execution to build the revenue motion that gets them there.
 
 If this is where you are right now, let’s chat.
-
----

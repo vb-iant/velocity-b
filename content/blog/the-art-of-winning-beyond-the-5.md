@@ -81,5 +81,3 @@ The tactics here include the classic success stories and case studies that posit
 Brand awareness and trust are a marketing multiplier, removing friction from revenue and creating buyers who are already primed for your solution, resulting in greater sales velocity.
 
 Create ART, win over the 95% today, and they’ll become part of your 5% tomorrow.
-
----

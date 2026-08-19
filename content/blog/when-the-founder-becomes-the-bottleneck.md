@@ -73,5 +73,3 @@ But that’s what scaling looks like.
 Great founders don’t become less important as their businesses grow. They become important in different ways.
 
 ***Need help making that transition? We’d love to help.***
-
----

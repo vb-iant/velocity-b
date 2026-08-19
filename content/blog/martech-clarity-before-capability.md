@@ -73,5 +73,3 @@ We’ve seen many examples where a simple audit, viewed through the eyes of an e
 I’ve summarised the process for brevity in a blog post, but we have a methodology called DRIVE, which stands for Diagnose, Refine, Implement, Validate, and Expand, a structured approach to de-risk technology decisions before committing budget and time.
 
 If you are interested, maybe you are standing at the crossroads of what to do next with your marketing tech stack, or feel something is a little off, please get in touch. We’re always happy to chat about tech, and if you feel something is a little off, it probably is.
-
----

@@ -49,5 +49,3 @@ You get local presence, local knowledge, and local execution from day one, while
 For many SaaS companies, that's a faster and lower-risk route to building a sustainable UK business.
 
 How are you approaching international expansion—through direct hiring or a more flexible market-entry model?
-
----
