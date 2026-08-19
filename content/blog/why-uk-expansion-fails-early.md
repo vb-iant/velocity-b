@@ -18,7 +18,7 @@ They haven't.
 
 The first 90 days shouldn't be about selling, they should be about learning. That means validating four things before you invest heavily in people and marketing:
 
-### 1. Your Ideal Customer Profile (ICP)
+## 1. Your Ideal Customer Profile (ICP)
 
 The industries, company sizes and buyer personas that convert in the US aren't always your best opportunity in the UK.
 
@@ -31,7 +31,7 @@ Ask yourself:
 
 Your goal is to identify where you can build momentum fastest, rather than assuming every successful US segment will translate.
 
-### 2. Your messaging
+## 2. Your messaging
 
 Changing the spelling from "color" to "colour" isn't localisation.
 
@@ -45,7 +45,7 @@ Test:
 
 If buyers don't immediately think, "This solution is built for organisations like ours," you've got more work to do.
 
-### 3. Your pricing and commercial model
+## 3. Your pricing and commercial model
 
 Winning isn't just about having the right price, it's about having the right commercial model.
 
@@ -59,7 +59,7 @@ Validate:
 
 Small commercial differences can significantly affect conversion rates and sales cycles.
 
-### 4. Your competitive position
+## 4. Your competitive position
 
 Your biggest competitors in the UK may not be the same as those you face in North America.
 
