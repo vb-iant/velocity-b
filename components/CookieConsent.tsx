@@ -41,7 +41,18 @@ export function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!readConsentCookie()) setVisible(true);
+    // If the visitor already made a choice on a previous visit, the banner
+    // correctly stays hidden — but we still need to re-announce that choice
+    // to the dataLayer on every fresh page load. The default consent state
+    // (set beforeInteractive, before this component ever mounts) is always
+    // "denied", so without this re-push, returning visitors silently fall
+    // back to denied on every single session even after having accepted.
+    const existing = readConsentCookie();
+    if (existing) {
+      pushConsent(existing === "accepted" ? "granted" : "denied");
+    } else {
+      setVisible(true);
+    }
 
     const reopen = () => setVisible(true);
     window.addEventListener(COOKIE_REOPEN_EVENT, reopen);
