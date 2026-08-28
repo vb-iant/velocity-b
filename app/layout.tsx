@@ -32,7 +32,7 @@ export default function RootLayout({
       {/*
         Consent Mode default: must run before GTM fires so analytics/ad
         storage stays denied until consent is known. This script also checks
-        for an existing vb-consent cookie (set by CookieConsent.tsx on a
+        for an existing vb-consent-v2 cookie (set by CookieConsent.tsx on a
         previous visit) and immediately issues a consent update in the same
         synchronous, beforeInteractive script — not from a React useEffect
         deep in the body. GoogleTagManager loads with Next's afterInteractive
@@ -52,7 +52,7 @@ export default function RootLayout({
             ad_storage: 'denied'
           });
           (function() {
-            var match = document.cookie.match(/(?:^|;\\s*)vb-consent=(accepted|rejected)/);
+            var match = document.cookie.match(/(?:^|;\\s*)vb-consent-v2=(accepted|rejected)/);
             if (match) {
               var state = match[1] === 'accepted' ? 'granted' : 'denied';
               gtag('consent', 'update', {

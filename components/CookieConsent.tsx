@@ -2,7 +2,12 @@
 
 import { useEffect, useState } from "react";
 
-const COOKIE_NAME = "vb-consent";
+// Bumped from "vb-consent" to "vb-consent-v2" on 2026-08-28: consent from
+// before this date was recorded under a buggy re-announcement flow (see
+// commits 94430e0 and 16999f3), so those old cookies are deliberately
+// orphaned here rather than migrated, forcing every visitor to be re-asked
+// once under the fixed logic.
+const COOKIE_NAME = "vb-consent-v2";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365; // 1 year
 export const COOKIE_REOPEN_EVENT = "vb-open-cookie-prefs";
 export const COOKIE_CHANGED_EVENT = "vb-consent-changed";
@@ -11,7 +16,7 @@ type ConsentValue = "accepted" | "rejected";
 
 function readConsentCookie(): ConsentValue | null {
   if (typeof document === "undefined") return null;
-  const match = document.cookie.match(/(?:^|;\s*)vb-consent=(accepted|rejected)/);
+  const match = document.cookie.match(/(?:^|;\s*)vb-consent-v2=(accepted|rejected)/);
   return match ? (match[1] as ConsentValue) : null;
 }
 
