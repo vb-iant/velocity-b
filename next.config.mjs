@@ -31,10 +31,11 @@ const nextConfig = {
       { source: '/series-b-marketing-playbook', destination: '/resources', permanent: true },
       { source: '/meet-alex-us-expansion', destination: '/contact', permanent: true },
       { source: '/meetings/simonson', destination: '/contact', permanent: true },
-      // Alex's HubSpot booking page retired Oct 2026 (no traffic); temporary so it can return
+      // HubSpot booking pages retired Oct 2026 (no traffic); temporary so they can return
       { source: '/meet-alex', destination: '/contact', permanent: false },
-      { source: '/meetings/ian-truscott', destination: '/meet-ian', permanent: true },
-      { source: '/meetings/ian-truscott/iod-mentoring-slots', destination: '/meet-ian', permanent: true },
+      { source: '/meet-ian', destination: '/contact', permanent: false },
+      { source: '/meetings/ian-truscott', destination: '/contact', permanent: true },
+      { source: '/meetings/ian-truscott/iod-mentoring-slots', destination: '/contact', permanent: true },
     ];
   },
 };
