@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimatedChevron } from "@/components/AnimatedChevron";
-import { HubspotForm } from "@/components/HubspotForm";
+import { ContactForm } from "@/components/ContactForm";
 
 const ctaAccent = "inline-block bg-orange px-[30px] py-4 text-[15px] font-bold text-navy";
 const ctaSolid = "inline-block bg-navy px-[30px] py-4 text-[15px] font-bold text-white";
@@ -163,12 +163,7 @@ export default function VelocitySprintPage() {
             </p>
 
             <div className="mt-6">
-              <HubspotForm
-                portalId="143941905"
-                formId="9a6ddf10-2fd2-45df-8613-c8fb61ba876b"
-                region="eu1"
-                targetId="velocity-sprint-form"
-              />
+              <ContactForm source="Velocity Sprint page" idPrefix="velocity-sprint" />
             </div>
 
             <p className="mt-4 text-sm italic text-[#9096a8]">

@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { AnimatedChevron } from "@/components/AnimatedChevron";
+import { buildMarkdown } from "@/lib/velocity-assessment-submission";
+import { submitToWeb3Forms } from "@/lib/web3forms";
 import {
   COMPANY_INFO_INTRO,
   COMPANY_SIZE,
@@ -193,23 +195,37 @@ export function VelocityAssessment() {
   async function handleFinish() {
     setSubmitting(true);
     setStep("results");
-    try {
-      await fetch("/api/velocity-assessment", {
+    const payload = {
+      companyInfo,
+      answers: selectedLabels,
+      scores,
+      finalResponse,
+    };
+
+    // HubSpot (via our API route) records the contact; Web3Forms emails us the
+    // write-up, replacing the HubSpot Workflow notification lost on HubSpot Free.
+    // Sent independently so one failing never stops the other.
+    const notification = new FormData();
+    const name = `${companyInfo.firstName ?? ""} ${companyInfo.lastName ?? ""}`.trim();
+    notification.set(
+      "subject",
+      `New Velocity Assessment — ${companyInfo.companyName || name} (${scores.total}/36)`
+    );
+    notification.set("name", name);
+    notification.set("email", companyInfo.email ?? "");
+    notification.set("message", buildMarkdown(payload));
+
+    // Scoring is computed client-side, so a failed submission never blocks
+    // the person seeing their result.
+    await Promise.allSettled([
+      fetch("/api/velocity-assessment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          companyInfo,
-          answers: selectedLabels,
-          scores,
-          finalResponse,
-        }),
-      });
-    } catch {
-      // Scoring is computed client-side, so a failed submission doesn't block
-      // the person seeing their result — see CTRL task on email wiring.
-    } finally {
-      setSubmitting(false);
-    }
+        body: JSON.stringify(payload),
+      }),
+      submitToWeb3Forms(notification),
+    ]);
+    setSubmitting(false);
   }
 
   function goNext() {

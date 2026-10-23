@@ -1,13 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
-  QUESTIONS,
-  PILLAR_LABEL,
-  pillarBand,
-  totalBand,
-  TOTAL_BAND_LABEL,
-  FINAL_QUESTION_PROMPT,
-  type Pillar,
-} from "@/lib/velocity-assessment";
+  buildMarkdown,
+  type AssessmentPayload,
+} from "@/lib/velocity-assessment-submission";
 
 // Velocity Assessment submission endpoint.
 //
@@ -20,79 +15,14 @@ import {
 // design. Tested live 2026-08-02 against the real portal (Contact created,
 // Company matched/associated, assessment_submission field populated,
 // internal notification email fired via HubSpot Workflow).
+//
+// Oct 2026: HubSpot downgraded to Free, so the Workflow notification no
+// longer fires. The notification email now comes from Web3Forms, sent
+// browser-side by components/VelocityAssessment.tsx using the same Markdown.
 
 const HUBSPOT_PORTAL_ID = "143941905";
 const HUBSPOT_FORM_GUID = "c2860f60-7ae0-4a09-af35-4f84d3402171";
 const HUBSPOT_SUBMIT_URL = `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_GUID}`;
-
-const PILLAR_ORDER: Pillar[] = ["awareness", "revenue", "trust"];
-
-interface CompanyInfo {
-  firstName?: string;
-  lastName?: string;
-  email?: string;
-  companyName?: string;
-  companySize?: string;
-  companyGoals?: string;
-  icpConfidence?: string;
-}
-
-interface Scores {
-  awareness: number;
-  revenue: number;
-  trust: number;
-  total: number;
-}
-
-interface AssessmentPayload {
-  companyInfo?: CompanyInfo;
-  answers?: Record<string, string>;
-  scores?: Scores;
-  finalResponse?: string;
-}
-
-function buildMarkdown(payload: AssessmentPayload): string {
-  const { companyInfo = {}, answers = {}, scores, finalResponse } = payload;
-
-  const lines: string[] = [];
-
-  lines.push("# Velocity Assessment submission");
-  lines.push("");
-  lines.push("## Company info");
-  lines.push(`- **Name:** ${companyInfo.firstName ?? ""} ${companyInfo.lastName ?? ""}`.trim());
-  lines.push(`- **Email:** ${companyInfo.email ?? ""}`);
-  lines.push(`- **Company:** ${companyInfo.companyName ?? ""}`);
-  lines.push(`- **Company size:** ${companyInfo.companySize ?? ""}`);
-  lines.push(`- **Company goals:** ${companyInfo.companyGoals ?? ""}`);
-  lines.push(`- **ICP confidence:** ${companyInfo.icpConfidence ?? ""}`);
-  lines.push("");
-
-  if (scores) {
-    lines.push("## Scores");
-    for (const pillar of PILLAR_ORDER) {
-      const score = scores[pillar];
-      lines.push(`- **${PILLAR_LABEL[pillar]}:** ${score}/12 (${pillarBand(score)})`);
-    }
-    lines.push(`- **Total:** ${scores.total}/36 (${TOTAL_BAND_LABEL[totalBand(scores.total)]})`);
-    lines.push("");
-  }
-
-  for (const pillar of PILLAR_ORDER) {
-    lines.push(`## ${PILLAR_LABEL[pillar]}`);
-    for (const question of QUESTIONS[pillar]) {
-      const answer = answers[question.id] ?? "(not answered)";
-      lines.push(`**${question.prompt}**`);
-      lines.push(answer);
-      lines.push("");
-    }
-  }
-
-  lines.push("## Final question");
-  lines.push(`**${FINAL_QUESTION_PROMPT}**`);
-  lines.push(finalResponse?.trim() ? finalResponse.trim() : "(no response)");
-
-  return lines.join("\n");
-}
 
 export async function POST(req: NextRequest) {
   let body: unknown;
