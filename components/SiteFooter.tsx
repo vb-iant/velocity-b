@@ -57,7 +57,7 @@ export function SiteFooter() {
       </div>
 
       <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-hair pt-6 text-xs text-[#9aa0b5]">
-        <span>© Velocity B — c/o Rockstar CMO Ltd, 49 Greek St, London W1D 4EG</span>
+        <span>Rockstar CMO Ltd, trading as &quot;Velocity B&quot; | UK company registration no: 11714688</span>
         <div className="flex gap-4">
           <CookiePreferencesLink />
           <Link href="/privacy-policy" className="hover:text-navy">
